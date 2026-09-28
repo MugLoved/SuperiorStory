@@ -1,0 +1,8 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.mugloved.superiorstory.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": ["SoundEngineMixin"],
+  "injectors": { "defaultRequire": 0 }
+}
