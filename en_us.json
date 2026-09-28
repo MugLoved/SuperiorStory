@@ -1,0 +1,13 @@
+{
+  "superiorstory.beat.1": "Something that slumbered for eons has been disturbed.",
+  "superiorstory.beat.2": "Every being that arrives here was meant to...",
+  "superiorstory.beat.3": "Except You.",
+  "superiorstory.beat.4": "Whatever caused this, you won't survive long enough to find it.",
+  "superiorstory.beat.5": "At least not without a path.",
+  "superiorstory.choice.where": "Where am I...?",
+  "superiorstory.choice.who": "Who are you...?",
+  "superiorstory.prompt.continue": "Click anywhere to continue",
+  "superiorstory.prompt.skilltree": "Press %s to open your Skill Tree",
+  "superiorstory.command.replay": "Replaying the intro for %s.",
+  "superiorstory.command.reset": "The intro will play again for %s next time they join this world."
+}
