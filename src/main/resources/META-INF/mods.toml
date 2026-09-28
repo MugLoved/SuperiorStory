@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="superiorstory"
+version="1.1.0"
+displayName="SuperiorStory"
+authors="Mug (mugloved)"
+description='''
+A short, atmospheric first-join intro for the Superior modpack. Plays once per player per world, keeps the player safe while the world loads, and hands off to the Skill Tree.
+'''
+
+[[dependencies.superiorstory]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.superiorstory]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
