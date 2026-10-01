@@ -1,0 +1,106 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_andesite_alloy": {
+      "rarity": "COMMON"
+    },
+    "create_zinc_ingot": {
+      "rarity": "COMMON"
+    },
+    "create_brass_ingot": {
+      "rarity": "UNCOMMON"
+    },
+    "create_item_vault": {
+      "rarity": "UNCOMMON"
+    },
+    "create_radial_chassis": {
+      "rarity": "COMMON"
+    },
+    "create_secondary_linear_chassis": {
+      "rarity": "COMMON"
+    },
+    "create_linear_chassis": {
+      "rarity": "COMMON"
+    },
+    "create_metal_girder": {
+      "rarity": "COMMON"
+    },
+    "create_industrial_iron_block": {
+      "rarity": "COMMON"
+    },
+    "create_copper_sheet": {
+      "rarity": "COMMON"
+    },
+    "create_brass_sheet": {
+      "rarity": "UNCOMMON"
+    },
+    "create_powdered_obsidian": {
+      "rarity": "COMMON"
+    },
+    "create_golden_sheet": {
+      "rarity": "UNCOMMON"
+    },
+    "create_sturdy_sheet": {
+      "rarity": "RARE"
+    },
+    "create_crushed_raw_copper": {
+      "rarity": "COMMON"
+    },
+    "create_iron_sheet": {
+      "rarity": "COMMON"
+    },
+    "create_propeller": {
+      "rarity": "COMMON"
+    },
+    "create_crushed_raw_iron": {
+      "rarity": "COMMON"
+    },
+    "create_crushed_raw_gold": {
+      "rarity": "COMMON"
+    },
+    "create_rose_quartz": {
+      "rarity": "UNCOMMON"
+    },
+    "create_crafter_slot_cover": {
+      "rarity": "COMMON"
+    },
+    "create_railway_casing": {
+      "rarity": "RARE"
+    },
+    "create_crushed_raw_zinc": {
+      "rarity": "COMMON"
+    },
+    "create_brass_hand": {
+      "rarity": "UNCOMMON"
+    },
+    "create_brass_casing": {
+      "rarity": "UNCOMMON"
+    },
+    "create_copper_casing": {
+      "rarity": "UNCOMMON"
+    },
+    "create_precision_mechanism": {
+      "rarity": "RARE"
+    },
+    "create_whisk": {
+      "rarity": "COMMON"
+    },
+    "create_polished_rose_quartz": {
+      "rarity": "UNCOMMON"
+    },
+    "create_andesite_casing": {
+      "rarity": "COMMON"
+    },
+    "create_transmitter": {
+      "rarity": "UNCOMMON"
+    },
+    "create_cardboard": {
+      "rarity": "COMMON"
+    },
+    "create_pulp": {
+      "rarity": "COMMON"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "content": {
+    "minecraft_skull_banner_pattern": {
+      "rarity": "EPIC"
+    },
+    "minecraft_mojang_banner_pattern": {
+      "rarity": "LEGENDARY"
+    },
+    "minecraft_piglin_banner_pattern": {
+      "rarity": "RARE"
+    },
+    "minecraft_flower_banner_pattern": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_creeper_banner_pattern": {
+      "rarity": "EPIC"
+    },
+    "minecraft_globe_banner_pattern": {
+      "rarity": "RARE"
+    },
+    "minecraft_paper": {
+      "rarity": "COMMON"
+    },
+    "minecraft_recovery_compass": {
+      "rarity": "LEGENDARY"
+    },
+    "minecraft_compass": {
+      "rarity": "RARE"
+    },
+    "minecraft_map": {
+      "rarity": "COMMON"
+    },
+    "minecraft_iron_pickaxe": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

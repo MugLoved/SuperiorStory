@@ -1,0 +1,12 @@
+{
+  "requires": "fishing_tier_1",
+  "results": [
+    "starcatcher:copper_hook",
+    "starcatcher:leaf_bobber",
+    "starcatcher:cherry_bait",
+    "starcatcher:gunpowder_bait"
+  ],
+  "hint": {
+    "translate": "superiorstory.guide.fishing.locked.tier_1"
+  }
+}

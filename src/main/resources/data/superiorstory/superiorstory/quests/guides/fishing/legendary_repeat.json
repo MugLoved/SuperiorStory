@@ -1,0 +1,21 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "legendary"
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/legendary_3",
+      "stage": "turned_in"
+    }
+  },
+  "repeatable": true,
+  "cooldown": "1d",
+  "reward": {
+    "coins": 300
+  }
+}

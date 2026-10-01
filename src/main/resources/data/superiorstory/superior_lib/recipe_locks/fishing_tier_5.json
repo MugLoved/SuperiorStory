@@ -1,0 +1,17 @@
+{
+  "requires": "fishing_tier_5",
+  "results": [
+    "starcatcher:legendary_bait",
+    "starcatcher:shiny_hook",
+    "starcatcher:almighty_worm",
+    "starcatcher:sky_skin_smithing_template",
+    "starcatcher:magmaforged_skin_smithing_template"
+  ],
+  "recipes": [
+    "starcatcher:sky_rod",
+    "starcatcher:magmaforged_rod"
+  ],
+  "hint": {
+    "translate": "superiorstory.guide.fishing.locked.tier_5"
+  }
+}

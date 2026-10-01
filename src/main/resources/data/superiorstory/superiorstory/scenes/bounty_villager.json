@@ -1,0 +1,14 @@
+{
+  "npc": "minecraft:villager",
+  "beats": [
+    {
+      "text": {
+        "translate": "superiorstory.bounty.line.looking"
+      },
+      "bounty": {}
+    }
+  ],
+  "mods": [
+    "bountiful"
+  ]
+}

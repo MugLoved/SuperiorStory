@@ -1,0 +1,13 @@
+{
+  "requires": [
+    "sophisticatedstorage"
+  ],
+  "objectives": [
+    "sophisticatedstorage_upgrade",
+    "sophisticatedstorage_base"
+  ],
+  "rewards": [
+    "sophisticatedstorage_other",
+    "sophisticatedstorage_upgrade"
+  ]
+}

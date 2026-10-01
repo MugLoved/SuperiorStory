@@ -1,0 +1,26 @@
+{
+  "lines": [
+    {
+      "translate": "superiorstory.guide.fishing.greet.1"
+    },
+    {
+      "translate": "superiorstory.guide.fishing.greet.2"
+    },
+    {
+      "text": {
+        "translate": "superiorstory.guide.fishing.greet.night"
+      },
+      "if": {
+        "time": "night"
+      }
+    },
+    {
+      "text": {
+        "translate": "superiorstory.guide.fishing.greet.rain"
+      },
+      "if": {
+        "weather": "rain"
+      }
+    }
+  ]
+}

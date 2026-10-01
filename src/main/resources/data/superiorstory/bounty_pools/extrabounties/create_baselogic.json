@@ -1,0 +1,46 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_speedometer": {
+      "rarity": "UNCOMMON"
+    },
+    "create_stressometer": {
+      "rarity": "UNCOMMON"
+    },
+    "create_adjustable_chain_gearshift": {
+      "rarity": "RARE"
+    },
+    "create_belt_connector": {
+      "rarity": "COMMON"
+    },
+    "create_clutch": {
+      "rarity": "UNCOMMON"
+    },
+    "create_gearshift": {
+      "rarity": "UNCOMMON"
+    },
+    "create_encased_chain_drive": {
+      "rarity": "UNCOMMON"
+    },
+    "create_gearbox": {
+      "rarity": "UNCOMMON"
+    },
+    "create_vertical_gearbox": {
+      "rarity": "UNCOMMON"
+    },
+    "create_large_cogwheel": {
+      "rarity": "COMMON"
+    },
+    "create_cogwheel": {
+      "rarity": "COMMON"
+    },
+    "create_shaft": {
+      "rarity": "COMMON"
+    },
+    "create_depot": {
+      "rarity": "COMMON"
+    }
+  }
+}

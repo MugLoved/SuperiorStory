@@ -1,0 +1,34 @@
+{
+  "npc": "story_alchemist",
+  "priority": 28,
+  "if": {
+    "quest": {
+      "id": "superiorstory:three_deaths",
+      "stage": "turned_in"
+    }
+  },
+  "beats": [
+    [
+      "You again. The kettle's on, and this time there's no errand behind it.",
+      "Sit. Nothing needs killing today, and I mean to enjoy that."
+    ],
+    {
+      "text": "You've earned a quiet hour and a hot cup, at least.",
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      },
+      "accent": true
+    },
+    {
+      "text": "Tell me what you've seen, then, and I'll tell you what I've read.",
+      "choices": [
+        {
+          "text": "Another time.",
+          "goto": "end"
+        }
+      ]
+    }
+  ]
+}

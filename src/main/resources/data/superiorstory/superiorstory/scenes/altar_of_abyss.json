@@ -1,0 +1,29 @@
+{
+  "block": "cataclysm:altar_of_abyss",
+  "beats": [
+    "The basin is dry, but it smells of salt and far water. Something below is listening.",
+    {
+      "text": "It wants an offering: {item:minecraft:nautilus_shell}, {item:cataclysm:athame}, {item:cataclysm:crystallized_coral}, {item:minecraft:diamond_block} and {item:minecraft:heart_of_the_sea}, bound together as {item:cataclysm:abyssal_sacrifice}.",
+      "unless": {
+        "has_item": "cataclysm:abyssal_sacrifice"
+      }
+    },
+    {
+      "text": "The offering in your pack hums against the stone.",
+      "if": {
+        "has_item": "cataclysm:abyssal_sacrifice"
+      },
+      "accent": true,
+      "choices": [
+        {
+          "text": "Lay down the Abyssal Sacrifice.",
+          "use_block": "cataclysm:abyssal_sacrifice"
+        },
+        {
+          "text": "Leave it be.",
+          "goto": "end"
+        }
+      ]
+    }
+  ]
+}

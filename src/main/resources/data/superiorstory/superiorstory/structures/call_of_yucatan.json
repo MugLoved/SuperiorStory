@@ -1,0 +1,18 @@
+[
+  {
+    "structures": "call_of_yucutan:*",
+    "keywords": ["maya", "ancient gods", "ritual"]
+  },
+  {
+    "structures": "call_of_yucutan:deadly_crypt",
+    "look": "a jade-and-stone Mayan crypt sunk into the jungle, lit by bone torches and guarded by blowgun hunters",
+    "keywords": ["maya", "jade", "crypt", "jungle", "blowgun", "death god"],
+    "boss": ["call_of_yucutan:ah_puch"]
+  },
+  {
+    "structures": "call_of_yucutan:overgrown_temple",
+    "look": "an overgrown red limestone temple of mirrors, gold, and solar rays, choked with mystic vines",
+    "keywords": ["maya", "temple", "jungle", "sun", "mirrors", "solar rays", "gold", "hematite"],
+    "boss": ["call_of_yucutan:kukulkan", "call_of_yucutan:chaac", "call_of_yucutan:ahaw"]
+  }
+]

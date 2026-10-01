@@ -1,0 +1,21 @@
+{
+  "location": {
+    "structure": "cataclysm:burning_arena"
+  },
+  "item": "cataclysm:burning_ashes",
+  "reward": {
+    "give": {
+      "item": "minecraft:diamond",
+      "quantity": 3
+    },
+    "coins": 250,
+    "unlock": {
+      "category": "dragon_eggs"
+    },
+    "reward_choice": {
+      "pool": "superiorstory:quest_elite",
+      "count": 3,
+      "pick": 1
+    }
+  }
+}

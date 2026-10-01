@@ -1,0 +1,73 @@
+{
+  "trigger": "bounty_template",
+  "beats": [
+    {
+      "translate": "superiorstory.bounty.offer.criteria"
+    },
+    {
+      "needs": "bounty_obj_2",
+      "text": {
+        "translate": "superiorstory.bounty.more.2"
+      }
+    },
+    {
+      "needs": "bounty_obj_3",
+      "text": {
+        "translate": "superiorstory.bounty.more.3"
+      }
+    },
+    {
+      "translate": "superiorstory.bounty.reward.1"
+    },
+    {
+      "needs": "bounty_rew_2",
+      "text": {
+        "translate": "superiorstory.bounty.reward.2"
+      }
+    },
+    {
+      "needs": "bounty_rew_3",
+      "text": {
+        "translate": "superiorstory.bounty.reward.3"
+      }
+    },
+    {
+      "text": {
+        "translate": "superiorstory.bounty.ask"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "superiorstory.bounty.choice.accept"
+          },
+          "bounty_accept": true,
+          "outcome": "good",
+          "id": "bounty/bountiful_criteria/accepted",
+          "goto": "accepted"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.bounty.choice.decline"
+          },
+          "id": "bounty/bountiful_criteria/declined",
+          "goto": "declined"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "accepted": [
+      {
+        "translate": "superiorstory.bounty.accepted"
+      }
+    ],
+    "declined": [
+      {
+        "translate": "superiorstory.bounty.declined"
+      }
+    ]
+  },
+  "mods": [
+    "bountiful"
+  ]
+}

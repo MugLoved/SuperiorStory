@@ -1,0 +1,45 @@
+{
+  "npc": "letter_courier",
+  "priority": 40,
+  "if": {
+    "quest": {
+      "id": "superiorstory:courier_letter",
+      "stage": "active"
+    }
+  },
+  "beats": [
+    [
+      "Tobin's hand on the seal! I'd know that scrawl anywhere.",
+      "Ah, a traveller with a letter. Is it from Tobin?"
+    ],
+    {
+      "text": "Do you have it for me?",
+      "choices": [
+        {
+          "text": "Here it is, sealed and unopened.",
+          "hand_over": "minecraft:paper",
+          "deliver": "superiorstory:courier_letter",
+          "outcome": "good",
+          "id": "aldric/delivered",
+          "goto": "thanks"
+        },
+        {
+          "text": "Not yet.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "thanks": [
+      {
+        "text": [
+          "Good. Good. Tell Tobin the ale is still watered, and the answer is yes.",
+          "Splendid. Tell him I'll have the answer by the next market day."
+        ],
+        "accent": true
+      },
+      "Now, off with you. The road home is long."
+    ]
+  }
+}

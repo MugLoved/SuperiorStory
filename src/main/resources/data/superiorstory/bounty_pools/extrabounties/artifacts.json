@@ -1,0 +1,139 @@
+{
+  "requires": [
+    "artifacts"
+  ],
+  "content": {
+    "artifacts_novelty_drinking_hat": {
+      "rarity": "COMMON"
+    },
+    "artifacts_snorkel": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_night_vision_goggles": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_villager_hat": {
+      "rarity": "RARE"
+    },
+    "artifacts_flame_pendant": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_digging_claws": {
+      "rarity": "RARE"
+    },
+    "artifacts_chorus_totem": {
+      "rarity": "EPIC"
+    },
+    "artifacts_helium_flamingo": {
+      "rarity": "RARE"
+    },
+    "artifacts_superstitious_hat": {
+      "rarity": "RARE"
+    },
+    "artifacts_cowboy_hat": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_anglers_hat": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_scarf_of_invisibility": {
+      "rarity": "RARE"
+    },
+    "artifacts_lucky_scarf": {
+      "rarity": "RARE"
+    },
+    "artifacts_cross_necklace": {
+      "rarity": "RARE"
+    },
+    "artifacts_panic_necklace": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_shock_pendant": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_thorn_pendant": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_crystal_heart": {
+      "rarity": "EPIC"
+    },
+    "artifacts_universal_attractor": {
+      "rarity": "RARE"
+    },
+    "artifacts_antidote_vessel": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_bunny_hoppers": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_golden_hook": {
+      "rarity": "RARE"
+    },
+    "artifacts_onion_ring": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_pickaxe_heater": {
+      "rarity": "RARE"
+    },
+    "artifacts_fire_gauntlet": {
+      "rarity": "RARE"
+    },
+    "artifacts_pocket_piston": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_power_glove": {
+      "rarity": "RARE"
+    },
+    "artifacts_feral_claws": {
+      "rarity": "RARE"
+    },
+    "artifacts_whoopee_cushion": {
+      "rarity": "COMMON"
+    },
+    "artifacts_rooted_boots": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_flippers": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_vampiric_glove": {
+      "rarity": "RARE"
+    },
+    "artifacts_kitty_slippers": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_running_shoes": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_aqua_dashers": {
+      "rarity": "RARE"
+    },
+    "artifacts_steadfast_spikes": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_snowshoes": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_charm_of_sinking": {
+      "rarity": "UNCOMMON"
+    },
+    "artifacts_cloud_in_a_bottle": {
+      "rarity": "RARE"
+    },
+    "artifacts_obsidian_skull": {
+      "rarity": "RARE"
+    },
+    "artifacts_plastic_drinking_hat": {
+      "rarity": "COMMON"
+    },
+    "artifacts_eternal_steak": {
+      "rarity": "RARE"
+    },
+    "artifacts_everlasting_beef": {
+      "rarity": "RARE"
+    },
+    "artifacts_umbrella": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

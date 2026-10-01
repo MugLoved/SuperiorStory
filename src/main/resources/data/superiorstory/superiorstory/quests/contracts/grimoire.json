@@ -1,0 +1,29 @@
+{
+  "item": "illagerrevolutionmod:ominous_grimoire",
+  "mods": [
+    "illagerrevolutionmod",
+    "superior_affixes",
+    "superior_gambling",
+    "superior_dungeons",
+    "simplyswords"
+  ],
+  "reward": {
+    "rep": 2,
+    "coins": 1000,
+    "give": [
+      "superior_dungeons:exalted_realmkey",
+      {
+        "item": "superior_affixes:orb_of_exaltation",
+        "quantity": 4
+      },
+      "superior_gambling:mythical_chestplate_loot_box"
+    ],
+    "reward_choice": {
+      "pool": "superiorstory:contracts/unique_weapons",
+      "count": 4,
+      "pick": 1,
+      "fresh": true
+    }
+  },
+  "repeatable": true
+}

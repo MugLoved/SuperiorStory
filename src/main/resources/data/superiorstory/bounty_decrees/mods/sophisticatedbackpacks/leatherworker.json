@@ -1,0 +1,13 @@
+{
+  "requires": [
+    "sophisticatedbackpacks"
+  ],
+  "objectives": [
+    "sophisticatedbackpacks_base",
+    "sophisticatedbackpacks_upgrade"
+  ],
+  "rewards": [
+    "sophisticatedbackpacks_upgrade",
+    "sophisticatedbackpacks_backpack"
+  ]
+}

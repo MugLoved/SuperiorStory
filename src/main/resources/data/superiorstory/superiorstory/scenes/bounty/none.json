@@ -1,0 +1,11 @@
+{
+  "trigger": "bounty_template",
+  "beats": [
+    {
+      "translate": "superiorstory.bounty.none"
+    }
+  ],
+  "mods": [
+    "bountiful"
+  ]
+}

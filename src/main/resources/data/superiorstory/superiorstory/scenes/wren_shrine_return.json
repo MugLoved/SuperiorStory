@@ -1,0 +1,47 @@
+{
+  "npc": "story_cartographer",
+  "priority": 35,
+  "if": {
+    "quest": {
+      "id": "superiorstory:shrine_for_wren",
+      "stage": "active"
+    }
+  },
+  "beats": [
+    [
+      "The shrine, then. Is it quiet?",
+      "Back from the sand. Tell me, is the champion dead?"
+    ],
+    {
+      "text": "And the carvings?",
+      "choices": [
+        {
+          "text": "The champion is dead, and the carvings are safe.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:shrine_for_wren",
+              "stage": "boss_defeated"
+            }
+          },
+          "turn_in": "superiorstory:shrine_for_wren",
+          "outcome": "good",
+          "id": "wren/shrine_done",
+          "goto": "thanks"
+        },
+        {
+          "text": "Still working on it.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "thanks": [
+      {
+        "text": "The carvings will be copied before the sand covers them again. Tobin will sulk, and I'll enjoy it.",
+        "accent": true
+      },
+      "Here is your coin, as promised."
+    ]
+  }
+}

@@ -4,7 +4,7 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="superiorstory"
-version="1.1.0"
+version="${file.jarVersion}"
 displayName="SuperiorStory"
 authors="Mug (mugloved)"
 description='''
@@ -23,4 +23,46 @@ A short, atmospheric first-join intro for the Superior modpack. Plays once per p
     mandatory=true
     versionRange="[1.20.1,1.21)"
     ordering="NONE"
+    side="BOTH"
+
+[[dependencies.superiorstory]]
+    modId="superior_lib"
+    mandatory=true
+    versionRange="[0.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.superiorstory]]
+    modId="superior_respawn"
+    mandatory=true
+    versionRange="[0.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.superiorstory]]
+    modId="superior_sounds"
+    mandatory=true
+    versionRange="[0.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.superiorstory]]
+    modId="superior_skill_tree"
+    mandatory=false
+    versionRange="[0.1.0,)"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.superiorstory]]
+    modId="superior_hud"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="AFTER"
+    side="CLIENT"
+
+[[dependencies.superiorstory]]
+    modId="ftbquests"
+    mandatory=false
+    versionRange="[2001.4.0,)"
+    ordering="AFTER"
     side="BOTH"

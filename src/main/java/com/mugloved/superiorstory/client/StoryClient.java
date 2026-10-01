@@ -2,15 +2,12 @@ package com.mugloved.superiorstory.client;
 
 import com.mugloved.superiorstory.SuperiorStory;
 import com.mugloved.superiorstory.network.StoryNetwork;
+import com.mugloved.superiorstory.scene.StoryScene;
 import net.minecraft.Util;
-import com.mojang.blaze3d.audio.Channel;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.sounds.SoundInstance;
-import net.minecraft.client.sounds.ChannelAccess;
-import net.minecraft.client.sounds.SoundEngine;
-import net.minecraft.client.sounds.SoundManager;
 import net.minecraft.client.gui.screens.ReceivingLevelScreen;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ClientPlayerNetworkEvent;
@@ -19,9 +16,6 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.util.ObfuscationReflectionHelper;
-
-import java.util.Map;
 
 /**
  * Client side director. Keeps track of where the player is in the intro and makes sure
@@ -33,8 +27,7 @@ import java.util.Map;
  *  HANDOFF   player pressed the Skill Tree key; the backdrop stays behind the Skill Tree screen
  *  REVEAL    Skill Tree closed; the backdrop fades away and the world appears
  *
- * Sound follows the same states: from joining until the reveal the world is silent and
- * the hum plays; during the reveal the hum fades out while the world's sounds fade in.
+ * Publishes intro state to Superior Sounds; it owns the audio policy and playback.
  */
 @Mod.EventBusSubscriber(modid = SuperiorStory.MODID, value = Dist.CLIENT)
 public final class StoryClient {
@@ -42,18 +35,14 @@ public final class StoryClient {
 
     private static final long AWAIT_TIMEOUT = 8000;
     private static final long REVEAL_MS = 1800;
-    private static final long HUM_FADE_IN = 3000;
-
     private static State state = State.IDLE;
     private static IntroScreen screen;
     private static long awaitingSince;
     private static long revealStart;
     private static boolean gravityHeld;
     private static boolean hadNoGravity;
-    private static boolean tellServerFinished;
-    private static HumSound hum;
-    private static long humStart;
-    private static boolean humUnpauseBroken;
+    private static long sessionId;
+    private static ResourceLocation activeSceneId;
 
     private StoryClient() {}
 
@@ -63,9 +52,10 @@ public final class StoryClient {
     public static void onLoggingIn(ClientPlayerNetworkEvent.LoggingIn event) {
         reset();
         if (StoryNetwork.isPresentOn(event.getConnection())) {
+            StoryAudio.register();
+            StoryPresentation.register();
             state = State.AWAITING;
             awaitingSince = Util.getMillis();
-            WorldSoundFade.set(0f);   // keep the world quiet from the very first sound
         }
     }
 
@@ -75,21 +65,35 @@ public final class StoryClient {
     }
 
     private static void reset() {
+        releasePlayer();
         state = State.IDLE;
         screen = null;
-        gravityHeld = false;
-        tellServerFinished = false;
-        stopHum();
-        WorldSoundFade.set(1f);
+        sessionId = 0;
+        activeSceneId = null;
     }
 
-    /** Server's answer on login (or from /superiorstory replay). */
-    public static void onServerIntro(boolean play) {
+    static boolean isAudioActive() {
+        return state == State.PLAYING || state == State.HANDOFF;
+    }
+
+    static String activeSceneId() {
+        return activeSceneId == null ? null : activeSceneId.toString();
+    }
+
+    /** Server's answer on login or a requested scene. Null definition selects the hardcoded intro. */
+    public static void onServerScene(boolean play, long id, boolean immediate,
+                                     ResourceLocation sceneId, StoryScene scene) {
         Minecraft mc = Minecraft.getInstance();
         if (play) {
-            if (state != State.AWAITING || screen == null) screen = new IntroScreen();
+            if (!immediate && state != State.AWAITING) {
+                StoryNetwork.sendProgress(id, StoryNetwork.PROGRESS_CANCELED);
+                return;
+            }
+            releasePlayer();
+            screen = scene == null ? new IntroScreen() : new IntroScreen(scene);
+            sessionId = id;
+            activeSceneId = sceneId;
             state = State.PLAYING;
-            tellServerFinished = true;
             screen.begin();
             // Replay from a command: show it right away (on first join we wait for the loading screen).
             if (mc.player != null && mc.screen != screen && !(mc.screen instanceof ReceivingLevelScreen)) {
@@ -97,7 +101,6 @@ public final class StoryClient {
             }
         } else if (state == State.AWAITING) {
             if (screen != null && mc.screen == screen) {
-                // The backdrop was already up: fade gently into the world instead of popping.
                 startReveal();
                 mc.setScreen(null);
             } else {
@@ -106,38 +109,17 @@ public final class StoryClient {
         }
     }
 
-    /** The intro screen appeared for the first time: start the hum. */
-    static void onIntroShown() {
-        if (hum != null) return;
-        hum = new HumSound();
-        humStart = Util.getMillis();
-        Minecraft.getInstance().getSoundManager().play(hum);
-    }
-
-    private static void stopHum() {
-        if (hum != null) Minecraft.getInstance().getSoundManager().stop(hum);
-        hum = null;
-    }
-
-    /** Hum loudness 0..1, or -1 when it should stop. Read by {@link HumSound} every tick. */
-    static float humLevel() {
-        if (state == State.IDLE || hum == null) return -1f;
-        long now = Util.getMillis();
-        float in = Math.min(1f, (now - humStart) / (float) HUM_FADE_IN);
-        float out = state == State.REVEAL ? 1f - revealProgress(now) : 1f;
-        return in * in * out;
-    }
-
-    /** 0 -> 1 over the reveal, eased. Shared by the picture, the hum and the world's sounds. */
+    /** 0 -> 1 over the reveal, eased. */
     private static float revealProgress(long now) {
         float t = Math.min(1f, Math.max(0f, (now - revealStart) / (float) REVEAL_MS));
         return t * t * (3f - 2f * t);
     }
 
-    /** Player pressed the Skill Tree key on the last beat. */
-    static void onHandOff() {
-        state = State.HANDOFF;
-        StoryNetwork.sendProgress(StoryNetwork.PROGRESS_SEEN);
+    /** The scene ended; the tree screen may remain open during the handoff. */
+    static void onSceneEnded(boolean opened) {
+        StoryNetwork.sendProgress(sessionId, StoryNetwork.PROGRESS_SEEN);
+        if (opened) state = State.HANDOFF;
+        else startReveal();
     }
 
     private static void startReveal() {
@@ -147,7 +129,7 @@ public final class StoryClient {
     }
 
     private static void finish() {
-        if (tellServerFinished) StoryNetwork.sendProgress(StoryNetwork.PROGRESS_FINISHED);
+        if (sessionId != 0) StoryNetwork.sendProgress(sessionId, StoryNetwork.PROGRESS_FINISHED);
         releasePlayer();
         reset();
     }
@@ -164,7 +146,8 @@ public final class StoryClient {
         switch (state) {
             case AWAITING -> {
                 if (now - awaitingSince > AWAIT_TIMEOUT) {
-                    onServerIntro(false);   // server never answered: don't keep the player waiting
+                    StoryNetwork.sendProgress(0, StoryNetwork.PROGRESS_CANCELED);
+                    onServerScene(false, 0, false, null, null);
                 } else if (mc.screen == null) {
                     if (screen == null) screen = new IntroScreen();
                     mc.setScreen(screen);   // cover the world while we wait for the answer
@@ -203,13 +186,6 @@ public final class StoryClient {
     @SubscribeEvent
     public static void onClientTick(TickEvent.ClientTickEvent event) {
         if (event.phase != TickEvent.Phase.START) return;
-        // world sound level follows the state (20 updates a second)
-        WorldSoundFade.set(switch (state) {
-            case IDLE -> 1f;
-            case REVEAL -> revealProgress(Util.getMillis());
-            default -> 0f;
-        });
-        keepHumPlayingWhilePaused();
         if (state != State.AWAITING && state != State.PLAYING && state != State.HANDOFF) return;
         LocalPlayer player = Minecraft.getInstance().player;
         if (player == null) return;
@@ -220,25 +196,6 @@ public final class StoryClient {
         }
         player.setDeltaMovement(Vec3.ZERO);
         player.fallDistance = 0;
-    }
-
-    /**
-     * In singleplayer, opening a pausing screen (the Skill Tree, or the pause menu) pauses every
-     * sound in the game. The world should stay paused, but the hum should carry on underneath,
-     * so we un-pause just the hum. If this ever fails, the hum simply pauses with everything else.
-     */
-    private static void keepHumPlayingWhilePaused() {
-        Minecraft mc = Minecraft.getInstance();
-        if (hum == null || humUnpauseBroken || !mc.isPaused()) return;
-        try {
-            SoundEngine engine = ObfuscationReflectionHelper.getPrivateValue(SoundManager.class, mc.getSoundManager(), "f_120349_");
-            Map<SoundInstance, ChannelAccess.ChannelHandle> channels =
-                    ObfuscationReflectionHelper.getPrivateValue(SoundEngine.class, engine, "f_120226_");
-            ChannelAccess.ChannelHandle handle = channels == null ? null : channels.get(hum);
-            if (handle != null) handle.execute(Channel::unpause);
-        } catch (Throwable t) {
-            humUnpauseBroken = true;
-        }
     }
 
     private static void releasePlayer() {

@@ -1,0 +1,15 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "common",
+      "dimension": "minecraft:overworld",
+      "fluid": "minecraft:water"
+    }
+  },
+  "reward": {
+    "coins": 40
+  }
+}

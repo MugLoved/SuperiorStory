@@ -1,0 +1,76 @@
+{
+  "content": {
+    "minecraft_shelter_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_arms_up_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_burn_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_blade_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_skull_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_howl_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_danger_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_explorer_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_heartbreak_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_heart_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_sheaf_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_prize_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_brewer_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_angler_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_plenty_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_miner_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_mourner_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_snort_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_friend_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_archer_pottery_sherd": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_brush": {
+      "rarity": "COMMON"
+    },
+    "minecraft_brick": {
+      "rarity": "COMMON"
+    },
+    "minecraft_clay_ball": {
+      "rarity": "COMMON"
+    },
+    "minecraft_clay": {
+      "rarity": "COMMON"
+    }
+  }
+}

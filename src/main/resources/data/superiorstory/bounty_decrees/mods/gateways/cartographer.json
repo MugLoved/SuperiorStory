@@ -1,0 +1,9 @@
+{
+  "requires": [
+    "gateways"
+  ],
+  "objectives": [],
+  "rewards": [
+    "gateways_rew"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "requires": [
+    "mowziesmobs"
+  ],
+  "content": {
+    "mowziesmobs_umvuthana_mask_misery": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_umvuthana_mask_rage": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_umvuthana_mask_bliss": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_naga_fang": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_naga_fang_dagger": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_blowgun": {
+      "rarity": "COMMON"
+    },
+    "mowziesmobs_umvuthana_mask_faith": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_ice_crystal": {
+      "rarity": "EPIC"
+    },
+    "mowziesmobs_umvuthana_mask_fury": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_spear": {
+      "rarity": "COMMON"
+    },
+    "mowziesmobs_glowing_jelly": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_dart": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_wrought_helmet": {
+      "rarity": "EPIC"
+    },
+    "mowziesmobs_umvuthana_mask_fear": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

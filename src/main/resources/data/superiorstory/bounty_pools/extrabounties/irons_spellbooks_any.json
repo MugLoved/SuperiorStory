@@ -1,0 +1,97 @@
+{
+  "requires": [
+    "irons_spellbooks"
+  ],
+  "content": {
+    "irons_spellbooks_oakskin_elixir": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_greater_oakskin_elixir": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_greater_healing_potion": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_invisibility_elixir": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_greater_invisibility_elixir": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_evasion_elixir": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_greater_evasion_elixir": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_fire_ale": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_netherward_tincture": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_magic_cloth": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_arcane_essence": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_dragonskin": {
+      "rarity": "EPIC"
+    },
+    "irons_spellbooks_hogskin": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_divine_pearl": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_lightning_bottle": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_blood_vial": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_frozen_bone": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_legendary_ink": {
+      "rarity": "EPIC"
+    },
+    "irons_spellbooks_epic_ink": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_rare_ink": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_uncommon_ink": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_common_ink": {
+      "rarity": "COMMON"
+    },
+    "minecraft_skeleton_skull": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_arcane_salvage": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_ruined_book": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_cinder_essence": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_arcane_ingot": {
+      "rarity": "RARE"
+    },
+    "irons_spellbooks_shriving_stone": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_energized_core": {
+      "rarity": "UNCOMMON"
+    },
+    "irons_spellbooks_blank_rune": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

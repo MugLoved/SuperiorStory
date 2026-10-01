@@ -1,0 +1,47 @@
+{
+  "npc": "story_villager",
+  "priority": 35,
+  "if": {
+    "quest": {
+      "id": "superiorstory:shrine_for_tobin",
+      "stage": "active"
+    }
+  },
+  "beats": [
+    [
+      "Back already? Is the shrine still standing?",
+      "You look tired. Tell me it's quiet out there."
+    ],
+    {
+      "text": "Well?",
+      "choices": [
+        {
+          "text": "It's done. {boss} won't trouble your fields.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:shrine_for_tobin",
+              "stage": "boss_defeated"
+            }
+          },
+          "turn_in": "superiorstory:shrine_for_tobin",
+          "outcome": "good",
+          "id": "tobin/shrine_done",
+          "goto": "thanks"
+        },
+        {
+          "text": "Still working on it.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "thanks": [
+      {
+        "text": "No more kobolds in the wheat. Wren can have her scribbles; I have my fields.",
+        "accent": true
+      },
+      "Here's {reward}. Fresh from the oven. It isn't gold, but it's honest."
+    ]
+  }
+}

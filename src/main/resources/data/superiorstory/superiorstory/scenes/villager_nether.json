@@ -1,0 +1,10 @@
+{
+  "npc": "story_villager",
+  "priority": 30,
+  "if": {
+    "dimension": "minecraft:the_nether"
+  },
+  "beats": [
+    "You should not be here. Go home while you still can."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "block": "cataclysm:altar_of_fire",
+  "beats": [
+    "The altar is cold. Old soot fills its bowl.",
+    {
+      "text": "It hungers for something that still burns.",
+      "choices": [
+        {"text": "Place the burning ashes.", "use_block": "cataclysm:burning_ashes"},
+        {"text": "Leave it be.", "goto": "end"}
+      ]
+    }
+  ]
+}

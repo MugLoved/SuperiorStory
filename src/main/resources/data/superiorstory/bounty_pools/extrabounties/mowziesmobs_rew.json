@@ -1,0 +1,52 @@
+{
+  "requires": [
+    "mowziesmobs"
+  ],
+  "content": {
+    "mowziesmobs_gong": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_geomancer_robe": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_foliaath_seed": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_geomancer_sandals": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_sol_visage": {
+      "rarity": "LEGENDARY"
+    },
+    "mowziesmobs_geomancer_beads": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_earthrend_gauntlet": {
+      "rarity": "EPIC"
+    },
+    "mowziesmobs_sand_rake": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_sculptor_staff": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_wrought_axe": {
+      "rarity": "EPIC"
+    },
+    "mowziesmobs_grant_suns_blessing": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_bluff_rod": {
+      "rarity": "UNCOMMON"
+    },
+    "mowziesmobs_music_disc_petiole": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_geomancer_belt": {
+      "rarity": "RARE"
+    },
+    "mowziesmobs_captured_grottol": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

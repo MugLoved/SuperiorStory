@@ -1,0 +1,12 @@
+{
+  "requires": [
+    "alexsmobs"
+  ],
+  "objectives": [
+    "alexsmobs_any"
+  ],
+  "rewards": [
+    "alexsmobs_rew",
+    "alexsmobs_any"
+  ]
+}

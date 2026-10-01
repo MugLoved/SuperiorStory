@@ -1,0 +1,172 @@
+{
+  "requires": [
+    "alexscaves"
+  ],
+  "content": {
+    "alexscaves_out_polarity_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "alexscaves_out_abyssal_chasm_codex": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_out_toxic_caves_codex": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_out_primordial_caves_codex": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_out_magnetic_caves_codex": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_out_candy_cavity_codex": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_out_forlorn_hollows_codex": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_uranium": {
+      "rarity": "RARE"
+    },
+    "alexscaves_ominous_catalyst": {
+      "rarity": "RARE"
+    },
+    "alexscaves_pure_darkness": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_heart_of_iron": {
+      "rarity": "RARE"
+    },
+    "alexscaves_confection_oven": {
+      "rarity": "RARE"
+    },
+    "alexscaves_conversion_crucible": {
+      "rarity": "RARE"
+    },
+    "alexscaves_nuclear_furnace_component": {
+      "rarity": "RARE"
+    },
+    "alexscaves_quarry": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_telecore": {
+      "rarity": "RARE"
+    },
+    "alexscaves_sulfur_dust": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_toxic_paste": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_depth_charge": {
+      "rarity": "RARE"
+    },
+    "alexscaves_occult_gem": {
+      "rarity": "RARE"
+    },
+    "alexscaves_nuclear_bomb": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_ferrouslime_ball": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_fissile_core": {
+      "rarity": "RARE"
+    },
+    "alexscaves_hologram_projector": {
+      "rarity": "RARE"
+    },
+    "alexscaves_raw_azure_neodymium": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_raw_scarlet_neodymium": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_radiant_essence": {
+      "rarity": "RARE"
+    },
+    "alexscaves_gingerbread_helmet": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_gingerbread_boots": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_primordial_tunic": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_hazmat_chestplate": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_diving_chestplate": {
+      "rarity": "RARE"
+    },
+    "alexscaves_cloak_of_darkness": {
+      "rarity": "RARE"
+    },
+    "alexscaves_gingerbread_chestplate": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_diving_leggings": {
+      "rarity": "RARE"
+    },
+    "alexscaves_sack_of_sating": {
+      "rarity": "RARE"
+    },
+    "alexscaves_gingerbread_leggings": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_hazmat_mask": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_diving_helmet": {
+      "rarity": "RARE"
+    },
+    "alexscaves_hazmat_boots": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_diving_boots": {
+      "rarity": "RARE"
+    },
+    "alexscaves_totem_of_possession": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_sea_staff": {
+      "rarity": "RARE"
+    },
+    "alexscaves_quarry_smasher": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_raygun": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_submarine": {
+      "rarity": "EPIC"
+    },
+    "alexscaves_acid_bucket": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_primordial_pants": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_hazmat_leggings": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_desolate_dagger": {
+      "rarity": "RARE"
+    },
+    "alexscaves_primordial_helmet": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_hood_of_darkness": {
+      "rarity": "RARE"
+    },
+    "alexscaves_frostmint_spear": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_limestone_spear": {
+      "rarity": "COMMON"
+    },
+    "alexscaves_radon_bottle": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

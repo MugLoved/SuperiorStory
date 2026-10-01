@@ -1,0 +1,203 @@
+{
+  "npc": "story_alchemist",
+  "beats": [
+    {
+      "pool": "alchemist_high",
+      "if": {
+        "boss_tier": {
+          "min": 7
+        }
+      },
+      "accent": true,
+      "pace": 1.3
+    },
+    {
+      "pool": "alchemist_mid",
+      "if": {
+        "boss_tier": {
+          "min": 4,
+          "max": 6
+        }
+      }
+    },
+    {
+      "pool": "alchemist_low",
+      "if": {
+        "boss_tier": {
+          "min": 1,
+          "max": 3
+        }
+      }
+    },
+    {
+      "pool": "alchemist_unknown",
+      "unless": {
+        "boss_tier": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "text": [
+        "So? Where does that leave us?",
+        "Well? Are you in, or just looking?"
+      ],
+      "choices": [
+        {
+          "text": "I already have them.",
+          "hand_over": {
+            "quest": "superiorstory:ignis_ashes"
+          },
+          "outcome": "good",
+          "id": "alchemist/turned_in",
+          "goto": "thanks"
+        },
+        {
+          "text": "Where do I find it?",
+          "unless": {
+            "has_item": {
+              "quest": "superiorstory:ignis_ashes"
+            }
+          },
+          "goto": "search"
+        },
+        {
+          "text": "Not now.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "search": [
+      {
+        "text": "Let me {~consider}...",
+        "locate": {
+          "quest": "superiorstory:ignis_ashes",
+          "found": "found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found": [
+      [
+        "The {structure}. {distance} blocks {direction} of here; your map has it now.",
+        "It's the {structure}: {distance} blocks to the {direction}. I've marked it for you."
+      ],
+      {
+        "needs": "look",
+        "text": [
+          "{~rumor_intro} it's {look}.",
+          "Those who came back described {look}."
+        ]
+      },
+      {
+        "text": "Bring me {item} and the {reward} is yours. Will you {~set_out}?",
+        "choices": [
+          {
+            "text": "I'll go.",
+            "accept": "superiorstory:ignis_ashes",
+            "outcome": "good",
+            "id": "alchemist/accepted",
+            "goto": "accepted"
+          },
+          {
+            "text": "Not for me.",
+            "outcome": "bad",
+            "id": "alchemist/declined",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      "Odd. I can't think of where to send you from here."
+    ],
+    "accepted": [
+      {
+        "text": "Then go carefully. Being brave is optional, being alive is not. Come straight back with the ashes.",
+        "if": {
+          "boss_tier": {
+            "min": 7
+          }
+        },
+        "accent": true,
+        "pace": 1.3
+      },
+      {
+        "text": "Then good hunting. Take healing and come straight back with the ashes.",
+        "if": {
+          "boss_tier": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      },
+      {
+        "text": "Good. Quick in, quick out. I'll keep the kettle warm.",
+        "if": {
+          "boss_tier": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      },
+      {
+        "text": "Then good hunting. Come straight back with the ashes.",
+        "unless": {
+          "boss_tier": {
+            "min": 1
+          }
+        }
+      }
+    ],
+    "thanks": [
+      {
+        "text": [
+          "You came back. With {item}, no less. I'll be honest: I had already lit a candle for you.",
+          "Still warm... and you're still breathing. Do you know how rare that is?"
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 7
+          }
+        },
+        "accent": true,
+        "pace": 1.3
+      },
+      {
+        "text": [
+          "Warm to the touch, and no worse for wear. That took nerve.",
+          "{item}. Good. That can't have been easy."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      },
+      {
+        "text": "Fresh ashes and a whole apprentice. A good day.",
+        "if": {
+          "boss_tier": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      },
+      {
+        "text": "Ashes still warm from the fire. Wonderful.",
+        "unless": {
+          "boss_tier": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "text": "Take {reward} for {~reward_reason}, and a little coin besides. You earned every bit.",
+        "accent": true
+      }
+    ]
+  }
+}

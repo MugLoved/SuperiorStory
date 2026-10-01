@@ -1,0 +1,682 @@
+{
+  "requires": [
+    "gateways"
+  ],
+  "content": {
+    "gateways_gate_pearl_0": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_1": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_2": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_3": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_4": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_5": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_6": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_7": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_8": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_9": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_10": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_11": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_12": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_13": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_14": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_15": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_16": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_17": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_18": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_19": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_20": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_21": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_22": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_23": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_24": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_25": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_26": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_27": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_28": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_29": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_30": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_31": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_32": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_33": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_34": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_35": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_36": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_37": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_38": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_39": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_40": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_41": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_42": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_43": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_44": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_45": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_46": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_47": {
+      "rarity": "LEGENDARY"
+    },
+    "gateways_gate_pearl_48": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_49": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_50": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_51": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_52": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_53": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_54": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_55": {
+      "rarity": "LEGENDARY"
+    },
+    "gateways_gate_pearl_56": {
+      "rarity": "LEGENDARY"
+    },
+    "gateways_gate_pearl_57": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_58": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_59": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_60": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_61": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_62": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_63": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_64": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_65": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_66": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_67": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_68": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_69": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_70": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_71": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_72": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_73": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_74": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_75": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_76": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_77": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_78": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_79": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_80": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_81": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_82": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_83": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_84": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_85": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_86": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_87": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_88": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_89": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_90": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_91": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_92": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_93": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_94": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_95": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_96": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_97": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_98": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_99": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_100": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_101": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_102": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_103": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_104": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_105": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_106": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_107": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_108": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_109": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_110": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_111": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_112": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_113": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_114": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_115": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_116": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_117": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_118": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_119": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_120": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_121": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_122": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_123": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_124": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_125": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_126": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_127": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_128": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_129": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_130": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_131": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_132": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_133": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_134": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_135": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_136": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_137": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_138": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_139": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_140": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_141": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_142": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_143": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_144": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_145": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_146": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_147": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_148": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_149": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_150": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_151": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_152": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_153": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_154": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_155": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_156": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_157": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_158": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_159": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_160": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_161": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_162": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_163": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_164": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_165": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_166": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_167": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_168": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_169": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_170": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_171": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_172": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_173": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_174": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_175": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_176": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_177": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_178": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_179": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_180": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_181": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_182": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_183": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_184": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_185": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_186": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_187": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_188": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_189": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_190": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_191": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_192": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_193": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_194": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_195": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_196": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_197": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_198": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_199": {
+      "rarity": "LEGENDARY"
+    },
+    "gateways_gate_pearl_200": {
+      "rarity": "LEGENDARY"
+    },
+    "gateways_gate_pearl_201": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_202": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_203": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_204": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_205": {
+      "rarity": "RARE"
+    },
+    "gateways_gate_pearl_206": {
+      "rarity": "EPIC"
+    },
+    "gateways_gate_pearl_207": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_208": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_209": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_210": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_211": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_212": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_213": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_214": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_215": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_216": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_217": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_218": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_219": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_220": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_221": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_222": {
+      "rarity": "COMMON"
+    },
+    "gateways_gate_pearl_223": {
+      "rarity": "UNCOMMON"
+    },
+    "gateways_gate_pearl_224": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

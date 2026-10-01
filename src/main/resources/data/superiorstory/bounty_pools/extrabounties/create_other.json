@@ -1,0 +1,82 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_blaze_cake": {
+      "rarity": "UNCOMMON"
+    },
+    "create_goggles": {
+      "rarity": "UNCOMMON"
+    },
+    "create_blaze_cake_base": {
+      "rarity": "COMMON"
+    },
+    "create_nozzle": {
+      "rarity": "COMMON"
+    },
+    "create_cuckoo_clock": {
+      "rarity": "UNCOMMON"
+    },
+    "create_wooden_bracket": {
+      "rarity": "COMMON"
+    },
+    "create_hand_crank": {
+      "rarity": "COMMON"
+    },
+    "create_turntable": {
+      "rarity": "COMMON"
+    },
+    "create_metal_bracket": {
+      "rarity": "COMMON"
+    },
+    "create_flywheel": {
+      "rarity": "COMMON"
+    },
+    "create_crafting_blueprint": {
+      "rarity": "UNCOMMON"
+    },
+    "create_minecart_coupling": {
+      "rarity": "COMMON"
+    },
+    "create_schematic_table": {
+      "rarity": "UNCOMMON"
+    },
+    "create_wrench": {
+      "rarity": "COMMON"
+    },
+    "create_schematicannon": {
+      "rarity": "RARE"
+    },
+    "create_linked_controller": {
+      "rarity": "UNCOMMON"
+    },
+    "create_wand_of_symmetry": {
+      "rarity": "RARE"
+    },
+    "create_potato_cannon": {
+      "rarity": "RARE"
+    },
+    "create_extendo_grip": {
+      "rarity": "RARE"
+    },
+    "create_brown_toolbox": {
+      "rarity": "COMMON"
+    },
+    "create_red_table_cloth": {
+      "rarity": "COMMON"
+    },
+    "create_copper_table_cloth": {
+      "rarity": "COMMON"
+    },
+    "create_brass_table_cloth": {
+      "rarity": "COMMON"
+    },
+    "create_andesite_table_cloth": {
+      "rarity": "COMMON"
+    },
+    "create_desk_bell": {
+      "rarity": "COMMON"
+    }
+  }
+}

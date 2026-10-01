@@ -1,0 +1,61 @@
+[
+  {
+    "structures": "cataclysm:*",
+    "keywords": ["cataclysm", "boss lair"],
+    "lore": "Something terrible was sealed here long ago."
+  },
+  {
+    "structures": "cataclysm:acropolis",
+    "look": "a drowned Greek acropolis of marble columns and coral beneath the warm ocean",
+    "keywords": ["greek", "marble", "columns", "coral", "warm ocean", "storm"],
+    "boss": ["cataclysm:scylla"]
+  },
+  {
+    "structures": "cataclysm:ancient_factory",
+    "look": "a buried factory of rusted iron, pipes, and dormant machinery deep underground",
+    "keywords": ["machinery", "iron", "wither", "laser", "underground", "rust"],
+    "boss": ["cataclysm:the_harbinger"]
+  },
+  {
+    "structures": "cataclysm:burning_arena",
+    "look": "a blackstone coliseum ringed with lava and ever-burning brazier fire",
+    "keywords": ["fire", "lava", "arena", "nether", "blackstone"],
+    "boss": ["cataclysm:ignis"]
+  },
+  {
+    "structures": "cataclysm:cursed_pyramid",
+    "look": "a sand-swallowed pyramid, riddled with traps and haunted by ancient sentinels",
+    "keywords": ["pyramid", "desert", "curse", "traps", "sand", "kobold"],
+    "boss": ["cataclysm:ancient_remnant", "cataclysm:kobolediator"]
+  },
+  {
+    "structures": "cataclysm:frosted_prison",
+    "look": "a snow-buried prison fortress of frozen towers and iron bars",
+    "keywords": ["prison", "ice", "draugr", "undead", "snow", "curse"],
+    "boss": ["cataclysm:maledictus", "cataclysm:aptrgangr"]
+  },
+  {
+    "structures": "cataclysm:ruined_citadel",
+    "look": "a shattered citadel of purpur and end stone, guarded by void-touched constructs",
+    "keywords": ["end", "void", "purpur", "citadel", "golem", "shulker"],
+    "boss": ["cataclysm:ender_guardian", "cataclysm:ender_golem"]
+  },
+  {
+    "structures": "cataclysm:soul_black_smith",
+    "look": "a Nether forge of soul sand and blackstone, its anvils still glowing with soul fire",
+    "keywords": ["forge", "smith", "soul fire", "nether", "netherite", "monstrosity"],
+    "boss": ["cataclysm:netherite_monstrosity"]
+  },
+  {
+    "structures": "cataclysm:sunken_city",
+    "look": "a lightless city of coral-crusted stone lying on the ocean floor",
+    "keywords": ["abyss", "deep ocean", "coral", "prismarine", "deepling", "leviathan"],
+    "boss": ["cataclysm:the_leviathan"]
+  },
+  {
+    "structures": "cataclysm:kobolediator_shrine",
+    "look": "a small desert shrine of sandstone raised to a horned kobold champion",
+    "keywords": ["shrine", "desert", "kobold", "sandstone"],
+    "boss": ["cataclysm:kobolediator"]
+  }
+]

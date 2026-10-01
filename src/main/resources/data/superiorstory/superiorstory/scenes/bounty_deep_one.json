@@ -1,0 +1,19 @@
+{
+  "npc": "alexscaves:deep_one",
+  "beats": [
+    {
+      "text": {
+        "translate": "superiorstory.bounty.line.looking"
+      },
+      "bounty": {
+        "decrees": [
+          "alexscaves"
+        ]
+      }
+    }
+  ],
+  "mods": [
+    "bountiful",
+    "alexscaves"
+  ]
+}

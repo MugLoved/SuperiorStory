@@ -1,0 +1,145 @@
+{
+  "npc": "story_alchemist",
+  "priority": 20,
+  "if": {
+    "quest": {
+      "id": "superiorstory:ignis_ashes",
+      "stage": "turned_in"
+    }
+  },
+  "beats": [
+    {"pool":"alchemist_greeting"},
+    {
+      "text": "Two old seals still hold something down, and a courier waits at a settlement for word of them.",
+      "choices": [
+        {
+          "text": "I'll break the seals.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:twin_seals",
+              "stage": "available"
+            }
+          },
+          "goto": "search"
+        },
+        {
+          "text": "It is done.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:twin_seals",
+              "stage": "active"
+            }
+          },
+          "turn_in": "superiorstory:twin_seals",
+          "outcome": "good",
+          "id": "alchemist/seals_turned_in",
+          "goto": "thanks"
+        },
+        {
+          "text": "Not now.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "search": [
+      {
+        "text": "Let me mark them for you...",
+        "locate": {
+          "quest": "superiorstory:twin_seals",
+          "found": "found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found": [
+      [
+        "The first seal lies under the {structure}, {distance} blocks to the {direction}.",
+        "Start with the {structure}: {distance} blocks {direction}. That's where the first seal sleeps."
+      ],
+      {
+        "text": [
+          "{boss} nests there, {danger}. Bring friends, or a good will.",
+          "Fair warning: {boss} keeps the place, and it is {danger}."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 7
+          }
+        },
+        "accent": true,
+        "pace": 1.3
+      },
+      {
+        "text": [
+          "{boss} holds it, {danger}. Doable, if you come prepared.",
+          "{boss} is in residence. {danger}, but every giant falls eventually."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      },
+      {
+        "text": [
+          "{boss} lurks there, {danger}. A decent test of your gear.",
+          "It's guarded by {boss}, {danger}. Not much of a threat if you're careful."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      },
+      {
+        "text": "I can't say what waits inside. That's part of the charm.",
+        "unless": {
+          "boss_tier": {
+            "min": 1
+          }
+        }
+      },
+      "A second lies in another cold place, and Orin waits in a village to hear of it. Your map will show all three.",
+      {
+        "text": "Will you go?",
+        "choices": [
+          {
+            "text": "I'll go.",
+            "accept": "superiorstory:twin_seals",
+            "outcome": "good",
+            "id": "alchemist/seals_accepted",
+            "goto": "accepted"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      "I cannot place them from here. Try again later."
+    ],
+    "accepted": [
+      "Then go, and speak to Orin last. He'll know what to do with your word.",
+      "Go. Break them in any order, but speak to Orin last."
+    ],
+    "thanks": [
+      {
+        "text": "Orin's word reached me first. You have done more than I asked.",
+        "accent": true
+      },
+      "Take this, and my thanks."
+    ]
+  },
+  "unless": {
+    "quest": {
+      "id": "superiorstory:twin_seals",
+      "stage": "turned_in"
+    }
+  }
+}

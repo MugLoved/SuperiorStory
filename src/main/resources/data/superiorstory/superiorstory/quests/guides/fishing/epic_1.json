@@ -1,0 +1,27 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "epic",
+      "dimension": [
+        "minecraft:overworld",
+        "minecraft:the_nether"
+      ],
+      "fluid": [
+        "minecraft:water",
+        "minecraft:lava"
+      ]
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/rare_3",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "coins": 250
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_encased_fan": {
+      "rarity": "UNCOMMON"
+    },
+    "create_crushing_wheel": {
+      "rarity": "UNCOMMON"
+    },
+    "create_basin": {
+      "rarity": "UNCOMMON"
+    },
+    "create_blaze_burner": {
+      "rarity": "UNCOMMON"
+    },
+    "create_mechanical_press": {
+      "rarity": "UNCOMMON"
+    },
+    "create_mechanical_mixer": {
+      "rarity": "UNCOMMON"
+    },
+    "create_mechanical_crafter": {
+      "rarity": "RARE"
+    },
+    "create_millstone": {
+      "rarity": "UNCOMMON"
+    },
+    "create_mechanical_saw": {
+      "rarity": "UNCOMMON"
+    },
+    "create_deployer": {
+      "rarity": "RARE"
+    },
+    "create_mechanical_drill": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

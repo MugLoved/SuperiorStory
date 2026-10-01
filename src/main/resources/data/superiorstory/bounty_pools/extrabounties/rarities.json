@@ -1,0 +1,31 @@
+{
+  "content": {
+    "nautilus_shell": {
+      "rarity": "EPIC"
+    },
+    "prismarine_crystals": {
+      "rarity": "EPIC"
+    },
+    "prismarine_shard": {
+      "rarity": "UNCOMMON"
+    },
+    "heart_of_the_sea": {
+      "rarity": "LEGENDARY"
+    },
+    "spyglass": {
+      "rarity": "RARE"
+    },
+    "amethyst_shard": {
+      "rarity": "UNCOMMON"
+    },
+    "totem_of_undying": {
+      "rarity": "LEGENDARY"
+    },
+    "rabbit_stew": {
+      "rarity": "COMMON"
+    },
+    "clock": {
+      "rarity": "RARE"
+    }
+  }
+}

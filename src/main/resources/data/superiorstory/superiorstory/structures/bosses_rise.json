@@ -1,0 +1,36 @@
+[
+  {
+    "structures": "block_factorys_bosses:*",
+    "keywords": ["boss arena"]
+  },
+  {
+    "structures": "block_factorys_bosses:dragon_tower",
+    "look": "a fire-scorched tower hung with cages of skeletons and crowned with dragon bone",
+    "keywords": ["dragon", "tower", "ashlord", "fire", "cages", "skeletons"],
+    "boss": ["block_factorys_bosses:infernal_dragon"]
+  },
+  {
+    "structures": "block_factorys_bosses:kraken_ship",
+    "look": "a pirate galleon bristling with cannons, adrift on deep water",
+    "keywords": ["kraken", "pirate", "ship", "cannons", "ocean", "tentacles"],
+    "boss": ["block_factorys_bosses:kraken"]
+  },
+  {
+    "structures": "block_factorys_bosses:sandworm_nest",
+    "look": "a nest of sand and bone in the desert where a colossal worm burrows",
+    "keywords": ["sandworm", "desert", "nest", "burrow", "bones"],
+    "boss": ["block_factorys_bosses:sandworm"]
+  },
+  {
+    "structures": "block_factorys_bosses:underworld_arena",
+    "look": "a soul-lit arena of bone and cages where an undead knight holds court",
+    "keywords": ["underworld", "soul sand", "arena", "knight", "skeleton", "nether"],
+    "boss": ["block_factorys_bosses:underworld_knight"]
+  },
+  {
+    "structures": "block_factorys_bosses:yeti_hideout",
+    "look": "a snowbound hideout of ice and hides, home to an enormous yeti",
+    "keywords": ["yeti", "snow", "hideout", "ice", "cold"],
+    "boss": ["block_factorys_bosses:yeti"]
+  }
+]

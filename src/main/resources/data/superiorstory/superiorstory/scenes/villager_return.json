@@ -1,0 +1,77 @@
+{
+  "npc": "story_villager",
+  "priority": 10,
+  "if": {
+    "quest_stage": "active"
+  },
+  "beats": [
+    [
+      "Back already? How goes the {structure}?",
+      "Ah, you're back. The {structure}, was it?"
+    ],
+    {
+      "text": "Well? What news?",
+      "choices": [
+        {
+          "text": "It's done. The {boss|guardian} is dead.",
+          "if": {
+            "quest_stage": "boss_defeated"
+          },
+          "turn_in": true,
+          "outcome": "good",
+          "id": "villager/turned_in",
+          "goto": "reward"
+        },
+        {
+          "text": "I've seen the {structure}, but it isn't finished.",
+          "if": {
+            "quest_stage": "visited"
+          },
+          "goto": "encourage"
+        },
+        {
+          "text": "Still working on it.",
+          "goto": "encourage"
+        },
+        {
+          "text": "Remind me where it was.",
+          "goto": "remind"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "remind": [
+      "The {structure}. It's {distance} blocks {direction} of where you stand, more or less.",
+      {
+        "needs": "look",
+        "text": "Look for {look}."
+      },
+      {
+        "text": "Anything else?",
+        "choices": [
+          {
+            "text": "That's all.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "encourage": [
+      "Take your time. The dark isn't going anywhere, and neither am I."
+    ],
+    "reward": [
+      {
+        "text": "You did it! The whole village will sleep easier.",
+        "accent": true
+      },
+      "Bread, a warm bed, and my thanks. Come find me if you want another lead."
+    ]
+  },
+  "unless": {
+    "quest": {
+      "id": "superiorstory:shrine_for_wren",
+      "stage": "active"
+    }
+  }
+}

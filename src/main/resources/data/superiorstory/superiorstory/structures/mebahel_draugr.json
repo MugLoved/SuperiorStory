@@ -1,0 +1,7 @@
+{
+  "structures": "mebahelcreaturesdraugr:draugr_crypt",
+  "boss": [
+    "mebahelcreaturesdraugr:draugr_overlord"
+  ],
+  "look": "an ancient crypt guarded by undead warriors"
+}

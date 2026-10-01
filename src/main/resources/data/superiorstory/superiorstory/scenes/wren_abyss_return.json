@@ -1,0 +1,53 @@
+{
+  "npc": "story_cartographer",
+  "priority": 34,
+  "if": {
+    "quest": {
+      "id": "superiorstory:abyssal_offering",
+      "stage": "active"
+    }
+  },
+  "beats": [
+    [
+      "Back from the deep? Then tell me you have what I asked for.",
+      "The altar is quiet, and so are you. Do you have {item}?"
+    ],
+    {
+      "text": "Those are the claws, if I'm not mistaken.",
+      "choices": [
+        {
+          "text": "Here: {item}, from {boss}.",
+          "hand_over": {
+            "quest": "superiorstory:abyssal_offering"
+          },
+          "outcome": "good",
+          "id": "wren/claws",
+          "goto": "thanks"
+        },
+        {
+          "text": "Where can I find it again?",
+          "goto": "remind"
+        },
+        {
+          "text": "Not yet.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "remind": [
+      "The altar of the abyss will call {boss} to you, if you carry the offering. Otherwise, the {structure} itself."
+    ],
+    "thanks": [
+      {
+        "text": [
+          "You summoned the deep and it answered. I'll ink that in gold.",
+          "The abyss gave up its claws. I never thought I'd hold them."
+        ],
+        "accent": true
+      },
+      "My thanks, and a friend's rate on every chart from now on."
+    ]
+  }
+}

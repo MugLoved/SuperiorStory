@@ -1,5 +1,8 @@
 package com.mugloved.superiorstory.client;
 
+import static com.mugloved.superiorstory.client.StoryChrome.*;
+
+import com.mugloved.superiorstory.scene.StoryScene;
 import net.minecraft.Util;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.gui.GuiGraphics;
@@ -11,14 +14,12 @@ import net.minecraft.network.chat.TextColor;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * The intro itself: five typed beats over the {@link Backdrop}.
+ * A typed scene over the {@link Backdrop}. The original intro remains authored here.
  *
  * Beat flow:  lead-in -> TYPING -> HOLD (short pause) -> INPUT (prompt / choices appear) -> OUT (fade) -> next beat
- * The last beat waits for the player's Skill Tree key; that key press is passed straight
- * through to the Skill Tree mod, which then opens on its own.
+ * The last beat opens the installed Skill Tree through the selected integration.
  *
  * The same instance is reused if the player opens the pause menu (Esc) and comes back,
  * so they pick up exactly where they left off.
@@ -30,30 +31,21 @@ public class IntroScreen extends Screen {
     private enum Input { CONTINUE, CHOICE, SKILL_KEY }
 
     /** @param speed typing-time multiplier (higher = slower)  @param accent emphasised line */
-    private record Beat(String key, Input input, float speed, boolean accent) {}
+    private record Beat(StoryScene.Text text, Input input, float speed, boolean accent,
+                        List<StoryScene.Text> choices) {}
 
     private static final Beat[] BEATS = {
-            new Beat("superiorstory.beat.1", Input.CONTINUE, 1.00f, false),
-            new Beat("superiorstory.beat.2", Input.CONTINUE, 1.00f, false),
-            new Beat("superiorstory.beat.3", Input.CHOICE, 2.10f, true),
-            new Beat("superiorstory.beat.4", Input.CONTINUE, 1.00f, false),
-            new Beat("superiorstory.beat.5", Input.SKILL_KEY, 1.20f, false),
+            new Beat(StoryScene.Text.translation("superiorstory.beat.1"), Input.CONTINUE, 1.00f, false, List.of()),
+            new Beat(StoryScene.Text.translation("superiorstory.beat.2"), Input.CONTINUE, 1.00f, false, List.of()),
+            new Beat(StoryScene.Text.translation("superiorstory.beat.3"), Input.CHOICE, 2.10f, true,
+                    List.of(StoryScene.Text.translation("superiorstory.choice.where"),
+                            StoryScene.Text.translation("superiorstory.choice.who"))),
+            new Beat(StoryScene.Text.translation("superiorstory.beat.4"), Input.CONTINUE, 1.00f, false, List.of()),
+            new Beat(StoryScene.Text.translation("superiorstory.beat.5"), Input.SKILL_KEY, 1.20f, false, List.of()),
     };
-
-    private static final String SKILL_TREE_KEY = "key.puffish_skills.open";
 
     // ------------------------------------------------------------------ look
 
-    private static final int TEXT = 0xE6EDF6;
-    private static final int TEXT_ACCENT = 0xA9D8FF;
-    private static final int PANEL = 0x0B101B;
-    private static final int BORDER = 0x3A4861;
-    private static final int BORDER_HOT = 0x9FD3FF;
-    private static final int BRACKET = 0x56657F;
-    private static final int BRACKET_HOT = 0xD2F0FF;
-    private static final int LABEL = 0x9AA6BA;
-    private static final int LABEL_HOT = 0xFFFFFF;
-    private static final int KEY_GOLD = 0xF2C46D;
 
     // ------------------------------------------------------------------ timing (ms)
 
@@ -72,6 +64,7 @@ public class IntroScreen extends Screen {
     private enum Stage { WAITING, LEAD_IN, TYPING, HOLD, INPUT, OUT, DONE }
 
     private Stage stage = Stage.WAITING;
+    private final Beat[] beats;
     private long stageAt;
     private long holdFor;
     private long firstOpenedAt = -1;
@@ -96,7 +89,28 @@ public class IntroScreen extends Screen {
     private long lastFrameAt;
 
     public IntroScreen() {
+        this(BEATS);
+    }
+
+    public IntroScreen(StoryScene scene) {
+        this(toBeats(scene));
+    }
+
+    private IntroScreen(Beat[] beats) {
         super(Component.empty());
+        this.beats = beats;
+    }
+
+    private static Beat[] toBeats(StoryScene scene) {
+        Beat[] result = new Beat[scene.beats().size()];
+        for (int i = 0; i < result.length; i++) {
+            StoryScene.Beat beat = scene.beats().get(i);
+            Input input = !beat.choices().isEmpty() ? Input.CHOICE
+                    : i == result.length - 1 && scene.end() == StoryScene.End.SKILL_TREE
+                    ? Input.SKILL_KEY : Input.CONTINUE;
+            result[i] = new Beat(beat.text(), input, beat.pace(), beat.accent(), beat.choices());
+        }
+        return result;
     }
 
     // ------------------------------------------------------------------ lifecycle
@@ -110,7 +124,6 @@ public class IntroScreen extends Screen {
     protected void init() {
         if (firstOpenedAt < 0) {
             firstOpenedAt = Util.getMillis();
-            StoryClient.onIntroShown();   // start the background hum
         }
         if (beat >= 0) layoutText();   // window resized or returning from the pause menu
     }
@@ -132,7 +145,7 @@ public class IntroScreen extends Screen {
 
     private void startBeat(int index) {
         beat = index;
-        text = Component.translatable(BEATS[index].key()).getString();
+        text = beats[index].text().component().getString();
         revealed = 0;
         revealAt = new long[text.length()];
         nextCharAt = Util.getMillis();
@@ -141,7 +154,7 @@ public class IntroScreen extends Screen {
     }
 
     private Beat current() {
-        return BEATS[beat];
+        return beats[beat];
     }
 
     // ------------------------------------------------------------------ text layout
@@ -195,7 +208,7 @@ public class IntroScreen extends Screen {
             revealed++;
             nextCharAt = Math.max(nextCharAt, now - 60) + (long) (charDelay(c, next) * current().speed());
             if (!Character.isWhitespace(c) && now - lastSoundAt >= MIN_SOUND_GAP) {
-                StorySounds.type(current().accent());
+                StoryAudio.type(current().accent());
                 lastSoundAt = now;
             }
         }
@@ -203,17 +216,6 @@ public class IntroScreen extends Screen {
             holdFor = current().input() == Input.CHOICE ? HOLD_CHOICE : HOLD_NORMAL;
             setStage(Stage.HOLD);
         }
-    }
-
-    /** Natural, slightly uneven rhythm with longer rests at punctuation. */
-    private static long charDelay(char c, char next) {
-        int jitter = ThreadLocalRandom.current().nextInt(0, 19);
-        return switch (c) {
-            case ' ' -> 20 + jitter / 2;
-            case ',', ';', ':' -> 190;
-            case '.', '!', '?' -> next == '.' ? 240 : 360;
-            default -> 36 + jitter;
-        };
     }
 
     private void completeLine() {
@@ -235,13 +237,13 @@ public class IntroScreen extends Screen {
                 if (inStage >= holdFor) {
                     setStage(Stage.INPUT);
                     inputShownAt = now;
-                    if (current().input() != Input.CONTINUE) StorySounds.appear();
+                    if (current().input() != Input.CONTINUE) StoryAudio.appear();
                 }
             }
             case OUT -> {
                 if (inStage >= OUT) {
-                    if (beat + 1 < BEATS.length) startBeat(beat + 1);
-                    else setStage(Stage.DONE);
+                    if (beat + 1 < beats.length) startBeat(beat + 1);
+                    else finishScene();
                 }
             }
             default -> {}
@@ -317,8 +319,8 @@ public class IntroScreen extends Screen {
                 drawBox(g, 0, label, appear, pulse);
             }
             case CHOICE -> {
-                Component a = Component.translatable("superiorstory.choice.where");
-                Component b = Component.translatable("superiorstory.choice.who");
+                Component a = current().choices().get(0).component();
+                Component b = current().choices().get(1).component();
                 int w = Math.max(font.width(a), font.width(b)) + 30;
                 int gap = 20;
                 placeBox(1, width / 2 - gap / 2 - w / 2, y, w, 22);
@@ -331,8 +333,8 @@ public class IntroScreen extends Screen {
                 KeyMapping key = skillTreeKey();
                 float pulse = 0.80f + 0.20f * (float) Math.sin(now / 480.0);
                 if (key == null) {
-                    // Skill Tree mod missing or key unbound: fall back to a normal continue
-                    Component label = Component.translatable("superiorstory.prompt.continue");
+                    Component label = Component.translatable(StoryTreeHandoff.available()
+                            ? "superiorstory.prompt.open_tree" : "superiorstory.prompt.continue");
                     placeBox(0, width / 2, y, font.width(label) + 26, 20);
                     updateHover(mouseX, mouseY, dt, appear);
                     drawBox(g, 0, label, appear, pulse);
@@ -369,7 +371,7 @@ public class IntroScreen extends Screen {
         if (appear > 0.5f && stage == Stage.INPUT) {
             for (int i = 0; i < 3; i++) if (inside(i, mouseX, mouseY)) now = i;
         }
-        if (now != hovered && now >= 0) StorySounds.hover();
+        if (now != hovered && now >= 0) StoryAudio.hover();
         hovered = now;
         decayHover(dt, hovered);
     }
@@ -395,30 +397,11 @@ public class IntroScreen extends Screen {
         g.pose().scale(s, s, 1f);
         int x0 = -w / 2, y0 = -ht / 2, x1 = x0 + w, y1 = y0 + ht;
 
-        g.fill(x0, y0, x1, y1, Backdrop.argb(alpha * (0.80f + 0.10f * h), PANEL));
-        int border = Backdrop.argb(alpha, lerpColor(BORDER, BORDER_HOT, h));
-        g.fill(x0, y0, x1, y0 + 1, border);
-        g.fill(x0, y1 - 1, x1, y1, border);
-        g.fill(x0, y0, x0 + 1, y1, border);
-        g.fill(x1 - 1, y0, x1, y1, border);
-
-        int o = 3 + Math.round(2 * h), len = 5;
-        int br = Backdrop.argb(alpha, lerpColor(BRACKET, BRACKET_HOT, h));
-        corner(g, x0 - o, y0 - o, 1, 1, len, br);
-        corner(g, x1 + o, y0 - o, -1, 1, len, br);
-        corner(g, x0 - o, y1 + o, 1, -1, len, br);
-        corner(g, x1 + o, y1 + o, -1, -1, len, br);
+        StoryChrome.frame(g, x0, y0, x1, y1, alpha, hot);
 
         int labelColor = Backdrop.argb(alpha * Math.max(labelPulse, h), lerpColor(LABEL, LABEL_HOT, h));
         text(g, label, -font.width(label) / 2f, -font.lineHeight / 2f + 1, labelColor, false);
         g.pose().popPose();
-    }
-
-    private static void corner(GuiGraphics g, int x, int y, int dx, int dy, int len, int color) {
-        int hx0 = Math.min(x, x + dx * len), hx1 = Math.max(x, x + dx * len);
-        int vy0 = Math.min(y, y + dy * len), vy1 = Math.max(y, y + dy * len);
-        g.fill(hx0, Math.min(y, y + dy), hx1, Math.max(y, y + dy), color);
-        g.fill(Math.min(x, x + dx), vy0, Math.max(x, x + dx), vy1, color);
     }
 
     private void text(GuiGraphics g, String s, float x, float y, int argb, boolean shadow) {
@@ -468,7 +451,7 @@ public class IntroScreen extends Screen {
     }
 
     private void next() {
-        StorySounds.select();
+        StoryAudio.select();
         hovered = -1;
         setStage(Stage.OUT);
     }
@@ -483,9 +466,7 @@ public class IntroScreen extends Screen {
             KeyMapping key = skillTreeKey();
             if (key != null && key.matches(keyCode, scanCode)) {
                 handOff();
-                // Returning false lets Minecraft treat this as a normal key press now that
-                // our screen is gone, so the Skill Tree mod sees it and opens by itself.
-                return false;
+                return true;
             }
         }
         if (beat >= 0 && (keyCode == 257 || keyCode == 335 || keyCode == 32)) {   // Enter / numpad Enter / Space
@@ -496,8 +477,15 @@ public class IntroScreen extends Screen {
     }
 
     private void handOff() {
+        final boolean opened = StoryTreeHandoff.open();
         setStage(Stage.DONE);
-        StoryClient.onHandOff();
+        StoryClient.onSceneEnded(opened);
+        if (!opened) minecraft.setScreen(null);
+    }
+
+    private void finishScene() {
+        setStage(Stage.DONE);
+        StoryClient.onSceneEnded(false);
         minecraft.setScreen(null);
     }
 
@@ -505,26 +493,6 @@ public class IntroScreen extends Screen {
 
     /** The Skill Tree mod's "Open Skill Tree" key, or null if it isn't installed or is unbound. */
     private KeyMapping skillTreeKey() {
-        if (minecraft == null) return null;
-        for (KeyMapping k : minecraft.options.keyMappings) {
-            if (SKILL_TREE_KEY.equals(k.getName())) return k.isUnbound() ? null : k;
-        }
-        return null;
-    }
-
-    private static float clamp01(float v) {
-        return v < 0f ? 0f : Math.min(1f, v);
-    }
-
-    private static float easeOut(float t) {
-        float u = 1f - t;
-        return 1f - u * u * u;
-    }
-
-    private static int lerpColor(int a, int b, float t) {
-        int r = (int) (((a >> 16) & 255) + (((b >> 16) & 255) - ((a >> 16) & 255)) * t);
-        int gg = (int) (((a >> 8) & 255) + (((b >> 8) & 255) - ((a >> 8) & 255)) * t);
-        int bb = (int) ((a & 255) + ((b & 255) - (a & 255)) * t);
-        return (r << 16) | (gg << 8) | bb;
+        return StoryTreeHandoff.boundKey();
     }
 }

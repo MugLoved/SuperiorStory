@@ -1,6 +1,7 @@
 package com.mugloved.superiorstory.network;
 
 import com.mugloved.superiorstory.SuperiorStory;
+import com.mugloved.superiorstory.scene.StoryScene;
 import com.mugloved.superiorstory.server.StoryServer;
 import net.minecraft.network.Connection;
 import net.minecraft.network.FriendlyByteBuf;
@@ -17,15 +18,13 @@ import net.minecraftforge.network.simple.SimpleChannel;
 import java.util.function.Supplier;
 
 /**
- * Two tiny messages:
- *  - server -> client: "play the intro" / "no intro for you" (sent on every login)
- *  - client -> server: "intro seen" (save the flag) / "intro finished" (drop protection)
+ * Server sends the selected scene snapshot; client reports when it has been seen and finished.
  *
  * The channel accepts a missing remote, so a client with the mod can still join a server
  * without it (and vice versa) - the intro just won't play there.
  */
 public final class StoryNetwork {
-    private static final String VERSION = "1";
+    private static final String VERSION = "8";
 
     public static final SimpleChannel CHANNEL = NetworkRegistry.ChannelBuilder
             .named(new ResourceLocation(SuperiorStory.MODID, "main"))
@@ -36,6 +35,7 @@ public final class StoryNetwork {
 
     public static final int PROGRESS_SEEN = 1;
     public static final int PROGRESS_FINISHED = 2;
+    public static final int PROGRESS_CANCELED = 3;
 
     private StoryNetwork() {}
 
@@ -50,37 +50,61 @@ public final class StoryNetwork {
                 .decoder(ProgressMessage::decode)
                 .consumerMainThread(ProgressMessage::handle)
                 .add();
+        DialoguePackets.register(CHANNEL);
     }
 
     public static boolean isPresentOn(Connection connection) {
         return connection != null && CHANNEL.isRemotePresent(connection);
     }
 
-    public static void sendIntro(ServerPlayer player, boolean play) {
-        CHANNEL.send(PacketDistributor.PLAYER.with(() -> player), new IntroMessage(play));
+    public static void sendScene(ServerPlayer player, boolean play, long sessionId, boolean immediate,
+                                 ResourceLocation sceneId, StoryScene scene) {
+        CHANNEL.send(PacketDistributor.PLAYER.with(() -> player),
+                new IntroMessage(play, sessionId, immediate, sceneId, scene));
     }
 
-    public static void sendProgress(int stage) {
-        CHANNEL.sendToServer(new ProgressMessage(stage));
+    public static void sendProgress(long sessionId, int stage) {
+        CHANNEL.sendToServer(new ProgressMessage(sessionId, stage));
     }
 
     /** Server -> client. */
-    public record IntroMessage(boolean play) {
-        static void encode(IntroMessage msg, FriendlyByteBuf buf) { buf.writeBoolean(msg.play); }
-        static IntroMessage decode(FriendlyByteBuf buf) { return new IntroMessage(buf.readBoolean()); }
+    public record IntroMessage(boolean play, long sessionId, boolean immediate,
+                               ResourceLocation sceneId, StoryScene scene) {
+        static void encode(IntroMessage msg, FriendlyByteBuf buf) {
+            buf.writeBoolean(msg.play);
+            buf.writeVarLong(msg.sessionId);
+            buf.writeBoolean(msg.immediate);
+            buf.writeResourceLocation(msg.sceneId);
+            buf.writeBoolean(msg.scene != null);
+            if (msg.scene != null) msg.scene.writeClient(buf);
+        }
+        static IntroMessage decode(FriendlyByteBuf buf) {
+            boolean play = buf.readBoolean();
+            long sessionId = buf.readVarLong();
+            boolean immediate = buf.readBoolean();
+            ResourceLocation sceneId = buf.readResourceLocation();
+            StoryScene scene = buf.readBoolean() ? StoryScene.readClient(sceneId, buf) : null;
+            return new IntroMessage(play, sessionId, immediate, sceneId, scene);
+        }
         static void handle(IntroMessage msg, Supplier<NetworkEvent.Context> ctx) {
             DistExecutor.unsafeRunWhenOn(Dist.CLIENT,
-                    () -> () -> com.mugloved.superiorstory.client.StoryClient.onServerIntro(msg.play));
+                    () -> () -> com.mugloved.superiorstory.client.StoryClient.onServerScene(
+                            msg.play, msg.sessionId, msg.immediate, msg.sceneId, msg.scene));
         }
     }
 
     /** Client -> server. */
-    public record ProgressMessage(int stage) {
-        static void encode(ProgressMessage msg, FriendlyByteBuf buf) { buf.writeVarInt(msg.stage); }
-        static ProgressMessage decode(FriendlyByteBuf buf) { return new ProgressMessage(buf.readVarInt()); }
+    public record ProgressMessage(long sessionId, int stage) {
+        static void encode(ProgressMessage msg, FriendlyByteBuf buf) {
+            buf.writeVarLong(msg.sessionId);
+            buf.writeVarInt(msg.stage);
+        }
+        static ProgressMessage decode(FriendlyByteBuf buf) {
+            return new ProgressMessage(buf.readVarLong(), buf.readVarInt());
+        }
         static void handle(ProgressMessage msg, Supplier<NetworkEvent.Context> ctx) {
             ServerPlayer player = ctx.get().getSender();
-            if (player != null) StoryServer.onProgress(player, msg.stage);
+            if (player != null) StoryServer.onProgress(player, msg.sessionId, msg.stage);
         }
     }
 }

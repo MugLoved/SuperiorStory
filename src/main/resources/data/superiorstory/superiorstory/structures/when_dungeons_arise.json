@@ -1,0 +1,7 @@
+{
+  "structures": "dungeons_arise:illager_fort",
+  "boss": [
+    "minecraft:evoker"
+  ],
+  "look": "a fortified illager stronghold"
+}

@@ -1,0 +1,27 @@
+{
+  "npc": "story_example",
+  "beats": [
+    "Cold out, ain't it?",
+    "You'd be shiverin' if you knew what was comin' next...",
+    {
+      "text": "Want to hear it?",
+      "choices": [
+        {"text": "Tell me.", "goto": "warning"},
+        {"text": "Not my problem.", "outcome": "bad", "goto": "end"}
+      ]
+    }
+  ],
+  "branches": {
+    "warning": [
+      "The peaks are waking. Something old stirs under the ice.",
+      {
+        "text": "Will you climb up and look?",
+        "choices": [
+          {"text": "I'll go.", "outcome": "good", "id": "example/accepted"},
+          {"text": "Find someone else.", "outcome": "bad", "id": "example/refused", "goto": "end"}
+        ]
+      },
+      "Then be quick about it."
+    ]
+  }
+}

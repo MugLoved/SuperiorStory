@@ -1,0 +1,44 @@
+{
+  "npc": "seal_courier",
+  "priority": 40,
+  "if": {
+    "quest": {
+      "id": "superiorstory:twin_seals",
+      "stage": "active"
+    }
+  },
+  "beats": [
+    [
+      "There you are. Maren said someone would come asking after the seals.",
+      "Ah. You have the look of someone who has been underground. Maren's message, I take it?"
+    ],
+    {
+      "text": [
+        "Tell me it is done, and I will carry the word back myself.",
+        "Is it finished? Say the word and I'll be on the road."
+      ],
+      "choices": [
+        {
+          "text": "The seals are broken. Take the word to Maren.",
+          "deliver": "superiorstory:twin_seals",
+          "outcome": "good",
+          "id": "orin/delivered",
+          "goto": "thanks"
+        },
+        {
+          "text": "Not yet.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "thanks": [
+      {
+        "text": "Then the old wards hold no longer, and the hills are safer for it.",
+        "accent": true
+      },
+      "Go. I will be on the road before you reach the door."
+    ]
+  }
+}

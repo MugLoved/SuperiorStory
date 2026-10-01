@@ -1,0 +1,32 @@
+{
+  "location": {
+    "structure": "cataclysm:ancient_factory"
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:twin_seals",
+      "stage": "turned_in"
+    }
+  },
+  "also": [
+    {
+      "location": {
+        "structure": "cataclysm:acropolis"
+      }
+    },
+    {
+      "location": {
+        "structure": "cataclysm:sunken_city"
+      }
+    }
+  ],
+  "reward": {
+    "loot": "minecraft:chests/bastion_treasure",
+    "rep": 3,
+    "reward_choice": {
+      "pool": "superiorstory:quest_elite",
+      "count": 3,
+      "pick": 1
+    }
+  }
+}

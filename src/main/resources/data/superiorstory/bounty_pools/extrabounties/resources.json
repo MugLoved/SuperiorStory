@@ -1,0 +1,25 @@
+{
+  "content": {
+    "dried_kelp_block": {
+      "rarity": "RARE"
+    },
+    "glass_colorless": {
+      "rarity": "COMMON"
+    },
+    "wooden_slabs": {
+      "rarity": "COMMON"
+    },
+    "planks": {
+      "rarity": "COMMON"
+    },
+    "wool": {
+      "rarity": "COMMON"
+    },
+    "dyes": {
+      "rarity": "COMMON"
+    },
+    "logs": {
+      "rarity": "COMMON"
+    }
+  }
+}

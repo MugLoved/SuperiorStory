@@ -1,0 +1,26 @@
+{
+  "location": {
+    "pool": "superiorstory:safe_outposts"
+  },
+  "also": [
+    {
+      "location": {
+        "pool": "superiorstory:safe_outposts"
+      },
+      "deliver": {
+        "type": "minecraft:villager",
+        "tag": "letter_courier",
+        "name": "Innkeeper Aldric"
+      }
+    }
+  ],
+  "reward": {
+    "coins": 150,
+    "rep": 1,
+    "reward_choice": {
+      "pool": "superiorstory:quest_basic",
+      "count": 3,
+      "pick": 1
+    }
+  }
+}

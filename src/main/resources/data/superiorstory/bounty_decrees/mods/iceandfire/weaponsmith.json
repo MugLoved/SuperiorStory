@@ -1,0 +1,13 @@
+{
+  "requires": [
+    "iceandfire"
+  ],
+  "objectives": [
+    "iceandfire_obj",
+    "iceandfire_any"
+  ],
+  "rewards": [
+    "iceandfire_rew",
+    "iceandfire_any"
+  ]
+}

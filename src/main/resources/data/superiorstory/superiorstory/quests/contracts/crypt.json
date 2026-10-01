@@ -1,0 +1,31 @@
+{
+  "location": {
+    "structure": "mebahelcreaturesdraugr:draugr_crypt"
+  },
+  "item": "mebahelcreaturesdraugr:ebony_ingot",
+  "mods": [
+    "mebahelcreaturesdraugr",
+    "superior_affixes",
+    "superior_gambling",
+    "superior_dungeons",
+    "simplyswords"
+  ],
+  "reward": {
+    "rep": 2,
+    "coins": 250,
+    "give": [
+      "superior_dungeons:realmkey",
+      {
+        "item": "superior_affixes:orb_of_ascension",
+        "quantity": 2
+      }
+    ],
+    "reward_choice": {
+      "pool": "superiorstory:contracts/unique_weapons",
+      "count": 4,
+      "pick": 1,
+      "fresh": true
+    }
+  },
+  "repeatable": true
+}

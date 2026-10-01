@@ -1,0 +1,19 @@
+{
+  "requires": [
+    "create"
+  ],
+  "objectives": [
+    "create_core",
+    "create_baselogic"
+  ],
+  "rewards": [
+    "create_craft",
+    "create_fluid",
+    "create_gen",
+    "create_logistic",
+    "create_baselogic",
+    "create_motion",
+    "create_core",
+    "create_other"
+  ]
+}

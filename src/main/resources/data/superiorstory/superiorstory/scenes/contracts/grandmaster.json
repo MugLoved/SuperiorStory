@@ -1,0 +1,1023 @@
+{
+  "npc": "#superiorstory:contract_givers",
+  "priority": 20,
+  "mods": [
+    "superior_affixes",
+    "superior_gambling",
+    "superior_dungeons",
+    "simplyswords",
+    "bountiful"
+  ],
+  "beats": [
+    {
+      "text": {
+        "translate": "superiorstory.contract.greeting"
+      }
+    },
+    {
+      "text": {
+        "translate": "superiorstory.contract.ask"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "superiorstory.contract.choice.jobs"
+          },
+          "goto": "jobs"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.contract.choice.turn_in"
+          },
+          "goto": "hand"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.contract.choice.bounties"
+          },
+          "goto": "bounties"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.contract.choice.bye"
+          },
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "menu": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.ask"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.jobs"
+            },
+            "goto": "jobs"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.turn_in"
+            },
+            "goto": "hand"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bounties"
+            },
+            "goto": "bounties"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "jobs": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.jobs"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.structures"
+            },
+            "goto": "jobs_structures"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.summons"
+            },
+            "goto": "jobs_summons"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.grimoire.title"
+            },
+            "goto": "offer_grimoire"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "offer_bait": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.bait.offer"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.bait.reward"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.hand"
+            },
+            "hand_over": {
+              "quest": "superiorstory:contracts/bait"
+            },
+            "goto": "thanks_bait"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.accept"
+            },
+            "goto": "accepted_bait",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/bait",
+                "stage": "available"
+              }
+            },
+            "accept": "superiorstory:contracts/bait"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.remind"
+            },
+            "goto": "accepted_bait",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/bait",
+                "stage": "active"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "accepted_bait": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.bait.accepted"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "thanks_bait": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.bait.thanks"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "offer_crypt": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.crypt.offer"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.crypt.reward"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.hand"
+            },
+            "hand_over": {
+              "quest": "superiorstory:contracts/crypt"
+            },
+            "goto": "thanks_crypt"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.mark"
+            },
+            "goto": "search_crypt",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/crypt",
+                "stage": "available"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.remind"
+            },
+            "goto": "accepted_crypt",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/crypt",
+                "stage": "active"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "accepted_crypt": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.crypt.accepted"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "thanks_crypt": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.crypt.thanks"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "search_crypt": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.search"
+        },
+        "locate": {
+          "quest": "superiorstory:contracts/crypt",
+          "found": "found_crypt",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found_crypt": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.found"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.accept"
+            },
+            "accept": "superiorstory:contracts/crypt",
+            "goto": "accepted_crypt"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "offer_centurion": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.centurion.offer"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.centurion.reward"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.hand"
+            },
+            "hand_over": {
+              "quest": "superiorstory:contracts/centurion"
+            },
+            "goto": "thanks_centurion"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.mark"
+            },
+            "goto": "search_centurion",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/centurion",
+                "stage": "available"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.remind"
+            },
+            "goto": "accepted_centurion",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/centurion",
+                "stage": "active"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "accepted_centurion": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.centurion.accepted"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "thanks_centurion": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.centurion.thanks"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "search_centurion": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.search"
+        },
+        "locate": {
+          "quest": "superiorstory:contracts/centurion",
+          "found": "found_centurion",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found_centurion": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.found"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.accept"
+            },
+            "accept": "superiorstory:contracts/centurion",
+            "goto": "accepted_centurion"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "offer_orchid": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.orchid.offer"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.orchid.reward"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.hand"
+            },
+            "hand_over": {
+              "quest": "superiorstory:contracts/orchid"
+            },
+            "goto": "thanks_orchid"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.mark"
+            },
+            "goto": "search_orchid",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/orchid",
+                "stage": "available"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.remind"
+            },
+            "goto": "accepted_orchid",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/orchid",
+                "stage": "active"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "accepted_orchid": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.orchid.accepted"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "thanks_orchid": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.orchid.thanks"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "search_orchid": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.search"
+        },
+        "locate": {
+          "quest": "superiorstory:contracts/orchid",
+          "found": "found_orchid",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found_orchid": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.found"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.accept"
+            },
+            "accept": "superiorstory:contracts/orchid",
+            "goto": "accepted_orchid"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "offer_fort": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.fort.offer"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.fort.reward"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.hand"
+            },
+            "hand_over": {
+              "quest": "superiorstory:contracts/fort"
+            },
+            "goto": "thanks_fort"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.mark"
+            },
+            "goto": "search_fort",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/fort",
+                "stage": "available"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.remind"
+            },
+            "goto": "accepted_fort",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/fort",
+                "stage": "active"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "accepted_fort": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.fort.accepted"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "thanks_fort": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.fort.thanks"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "search_fort": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.search"
+        },
+        "locate": {
+          "quest": "superiorstory:contracts/fort",
+          "found": "found_fort",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found_fort": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.found"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.accept"
+            },
+            "accept": "superiorstory:contracts/fort",
+            "goto": "accepted_fort"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "offer_grimoire": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.grimoire.offer"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.grimoire.reward"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.hand"
+            },
+            "hand_over": {
+              "quest": "superiorstory:contracts/grimoire"
+            },
+            "goto": "thanks_grimoire"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.accept"
+            },
+            "goto": "accepted_grimoire",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/grimoire",
+                "stage": "available"
+              }
+            },
+            "accept": "superiorstory:contracts/grimoire"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.remind"
+            },
+            "goto": "accepted_grimoire",
+            "if": {
+              "quest": {
+                "id": "superiorstory:contracts/grimoire",
+                "stage": "active"
+              }
+            }
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "accepted_grimoire": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.grimoire.accepted"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "thanks_grimoire": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.grimoire.thanks"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "hand": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.bait.thanks"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:contracts/bait",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:contracts/bait"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.crypt.thanks"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:contracts/crypt",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:contracts/crypt"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.centurion.thanks"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:contracts/centurion",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:contracts/centurion"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.orchid.thanks"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:contracts/orchid",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:contracts/orchid"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.fort.thanks"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:contracts/fort",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:contracts/fort"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.grimoire.thanks"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:contracts/grimoire",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:contracts/grimoire"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.contract.hand"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.nothing"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.bye"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "jobs_structures": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.jobs"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.crypt.title"
+            },
+            "goto": "offer_crypt"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.centurion.title"
+            },
+            "goto": "offer_centurion"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.fort.title"
+            },
+            "goto": "offer_fort"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "jobs_summons": [
+      {
+        "text": {
+          "translate": "superiorstory.contract.jobs"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.contract.bait.title"
+            },
+            "goto": "offer_bait"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.orchid.title"
+            },
+            "goto": "offer_orchid"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.contract.choice.back"
+            },
+            "goto": "menu"
+          }
+        ]
+      }
+    ],
+    "bounties": [
+      {
+        "text": {
+          "translate": "superiorstory.bounty.line.looking"
+        },
+        "bounty": {
+          "decrees": [
+            "irons_spellbooks"
+          ]
+        }
+      }
+    ]
+  }
+}

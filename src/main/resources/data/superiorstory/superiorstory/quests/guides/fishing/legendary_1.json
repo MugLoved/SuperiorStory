@@ -1,0 +1,19 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "legendary"
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/epic_3",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "coins": 400
+  }
+}

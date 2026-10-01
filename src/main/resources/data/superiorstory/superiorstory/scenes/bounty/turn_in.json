@@ -1,0 +1,56 @@
+{
+  "trigger": "bounty_template",
+  "beats": [
+    {
+      "translate": "superiorstory.bounty.turn_in.done"
+    },
+    {
+      "translate": "superiorstory.bounty.turn_in.pay"
+    },
+    {
+      "needs": "bounty_rew_2",
+      "text": {
+        "translate": "superiorstory.bounty.reward.2"
+      }
+    },
+    {
+      "needs": "bounty_rew_3",
+      "text": {
+        "translate": "superiorstory.bounty.reward.3"
+      }
+    },
+    {
+      "text": {
+        "translate": "superiorstory.bounty.turn_in.ask"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "superiorstory.bounty.choice.hand_over"
+          },
+          "bounty_turn_in": true,
+          "outcome": "good",
+          "id": "bounty/turn_in/paid",
+          "goto": "paid"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.bounty.choice.not_yet"
+          },
+          "id": "bounty/turn_in/postponed",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "paid": [
+      {
+        "translate": "superiorstory.bounty.turn_in.paid"
+      }
+    ]
+  },
+  "mods": [
+    "bountiful"
+  ]
+}
