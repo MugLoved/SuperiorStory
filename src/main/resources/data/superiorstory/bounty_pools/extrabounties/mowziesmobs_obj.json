@@ -1,0 +1,10 @@
+{
+  "requires": [
+    "mowziesmobs"
+  ],
+  "content": {
+    "mowziesmobs_painted_acacia": {
+      "rarity": "COMMON"
+    }
+  }
+}

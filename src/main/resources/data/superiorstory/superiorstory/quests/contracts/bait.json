@@ -1,0 +1,28 @@
+{
+  "item": "notsoshrimple:raw_prawn",
+  "mods": [
+    "notsoshrimple",
+    "superior_affixes",
+    "superior_gambling",
+    "superior_dungeons",
+    "simplyswords"
+  ],
+  "reward": {
+    "rep": 2,
+    "coins": 100,
+    "give": [
+      {
+        "item": "superior_affixes:orb_of_infusion",
+        "quantity": 2
+      },
+      "superior_gambling:rare_boots_loot_box"
+    ],
+    "reward_choice": {
+      "pool": "superiorstory:contracts/unique_weapons",
+      "count": 4,
+      "pick": 1,
+      "fresh": true
+    }
+  },
+  "repeatable": true
+}

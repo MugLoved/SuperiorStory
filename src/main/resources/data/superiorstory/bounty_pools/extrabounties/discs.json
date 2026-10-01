@@ -1,0 +1,55 @@
+{
+  "content": {
+    "minecraft_music_disc_strad": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_stal": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_ward": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_wait": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_mall": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_5": {
+      "rarity": "RARE"
+    },
+    "minecraft_music_disc_far": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_cat": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_11": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_mellohi": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_otherside": {
+      "rarity": "RARE"
+    },
+    "minecraft_music_disc_pigstep": {
+      "rarity": "RARE"
+    },
+    "minecraft_music_disc_chirp": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_13": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_blocks": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_disc_fragment_5": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_music_disc_relic": {
+      "rarity": "RARE"
+    }
+  }
+}

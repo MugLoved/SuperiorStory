@@ -1,0 +1,32 @@
+{
+  "location": {
+    "structure": "dungeons_arise:illager_fort"
+  },
+  "item": "minecraft:totem_of_undying",
+  "mods": [
+    "dungeons_arise",
+    "superior_affixes",
+    "superior_gambling",
+    "superior_dungeons",
+    "simplyswords"
+  ],
+  "reward": {
+    "rep": 2,
+    "coins": 300,
+    "give": [
+      "superior_dungeons:realmkey",
+      "superior_gambling:rare_chestplate_loot_box",
+      {
+        "item": "superior_affixes:orb_of_ascension",
+        "quantity": 2
+      }
+    ],
+    "reward_choice": {
+      "pool": "superiorstory:contracts/unique_weapons",
+      "count": 4,
+      "pick": 1,
+      "fresh": true
+    }
+  },
+  "repeatable": true
+}

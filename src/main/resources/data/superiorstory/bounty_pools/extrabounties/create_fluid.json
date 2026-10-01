@@ -1,0 +1,43 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_fluid_valve": {
+      "rarity": "UNCOMMON"
+    },
+    "create_hose_pulley": {
+      "rarity": "UNCOMMON"
+    },
+    "create_fluid_tank": {
+      "rarity": "UNCOMMON"
+    },
+    "create_fluid_pipe": {
+      "rarity": "COMMON"
+    },
+    "create_mechanical_pump": {
+      "rarity": "UNCOMMON"
+    },
+    "create_copper_valve_handle": {
+      "rarity": "COMMON"
+    },
+    "create_spout": {
+      "rarity": "UNCOMMON"
+    },
+    "create_smart_fluid_pipe": {
+      "rarity": "RARE"
+    },
+    "create_item_drain": {
+      "rarity": "UNCOMMON"
+    },
+    "create_portable_fluid_interface": {
+      "rarity": "UNCOMMON"
+    },
+    "create_chocolate_bucket": {
+      "rarity": "COMMON"
+    },
+    "create_honey_bucket": {
+      "rarity": "COMMON"
+    }
+  }
+}

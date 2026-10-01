@@ -1,0 +1,109 @@
+{
+  "requires": [
+    "iceandfire"
+  ],
+  "content": {
+    "iceandfire_dragonforge_lightning_input": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_amythest": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_cyclops_eye": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonforge_ice_brick": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonforge_fire_brick": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonforge_ice_core_disabled": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_banner_pattern_lightning_head": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonforge_fire_input": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_banner_pattern_fire": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonegg_copper": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_white": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonforge_ice_input": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonsteel_fire_ingot": {
+      "rarity": "LEGENDARY"
+    },
+    "iceandfire_dragonegg_blue": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonsteel_lightning_ingot": {
+      "rarity": "LEGENDARY"
+    },
+    "iceandfire_dread_key": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_bronze": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_silver": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_black": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_banner_pattern_ice": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonegg_sapphire": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_red": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonforge_lightning_core_disabled": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonegg_gray": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonforge_lightning_brick": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonforge_fire_core_disabled": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_dragonsteel_ice_ingot": {
+      "rarity": "LEGENDARY"
+    },
+    "iceandfire_gorgon_head": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_banner_pattern_lightning": {
+      "rarity": "RARE"
+    },
+    "iceandfire_banner_pattern_fire_head": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonegg_electric": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_ghost_ingot": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonegg_green": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_banner_pattern_ice_head": {
+      "rarity": "RARE"
+    }
+  }
+}

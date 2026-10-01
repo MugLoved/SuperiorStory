@@ -1,0 +1,34 @@
+{
+  "requires": [
+    "iceandfire"
+  ],
+  "content": {
+    "iceandfire_frost_stew": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sickly_dragon_meal": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_nest": {
+      "rarity": "RARE"
+    },
+    "iceandfire_frost_lily": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_lightning_lily": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_fire_stew": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragon_meal": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_fire_lily": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_lightning_stew": {
+      "rarity": "RARE"
+    }
+  }
+}

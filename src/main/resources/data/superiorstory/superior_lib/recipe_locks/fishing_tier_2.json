@@ -1,0 +1,20 @@
+{
+  "requires": "fishing_tier_2",
+  "results": [
+    "starcatcher:steady_bobber",
+    "starcatcher:stone_hook",
+    "starcatcher:mossy_hook",
+    "starcatcher:lush_bait",
+    "starcatcher:murkwater_bait",
+    "starcatcher:dripstone_bait",
+    "starcatcher:humble_skin_smithing_template",
+    "starcatcher:bamboo_skin_smithing_template"
+  ],
+  "recipes": [
+    "starcatcher:humble_rod",
+    "starcatcher:bamboo_rod"
+  ],
+  "hint": {
+    "translate": "superiorstory.guide.fishing.locked.tier_2"
+  }
+}

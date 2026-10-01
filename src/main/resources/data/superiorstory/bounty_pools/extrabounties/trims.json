@@ -1,0 +1,55 @@
+{
+  "content": {
+    "minecraft_silence_armor_trim_smithing_template": {
+      "rarity": "EPIC"
+    },
+    "minecraft_sentry_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_coast_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_rib_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_snout_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_raiser_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_wild_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_spire_armor_trim_smithing_template": {
+      "rarity": "EPIC"
+    },
+    "minecraft_eye_armor_trim_smithing_template": {
+      "rarity": "EPIC"
+    },
+    "minecraft_host_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_vex_armor_trim_smithing_template": {
+      "rarity": "EPIC"
+    },
+    "minecraft_shaper_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_tide_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_ward_armor_trim_smithing_template": {
+      "rarity": "EPIC"
+    },
+    "minecraft_dune_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_wayfinder_armor_trim_smithing_template": {
+      "rarity": "RARE"
+    },
+    "minecraft_netherite_upgrade_smithing_template": {
+      "rarity": "EPIC"
+    }
+  }
+}

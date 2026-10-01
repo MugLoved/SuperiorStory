@@ -1,0 +1,208 @@
+{
+  "rewards": [
+    {
+      "give": "superior_affixes:orb_of_exaltation",
+      "weight": 4,
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_exaltation",
+        "quantity": 2
+      },
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_divinity",
+      "weight": 4,
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_divinity",
+        "quantity": 2
+      },
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_reflection",
+      "weight": 1,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_reflection",
+      "weight": 2,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:legendary_gem_loot_box",
+      "weight": 2,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:legendary_gem_loot_box",
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:legendary_ammo_crate",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:legendary_ammo_crate",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_helmet_loot_box",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_helmet_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_chestplate_loot_box",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_chestplate_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_leggings_loot_box",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_leggings_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_boots_loot_box",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:mythical_boots_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_dungeons:realmkey",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_dungeons:realmkey",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_dungeons:exalted_realmkey",
+      "weight": 1,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_dungeons:exalted_realmkey",
+      "weight": 2,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    }
+  ]
+}

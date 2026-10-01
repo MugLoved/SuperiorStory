@@ -1,0 +1,15 @@
+{
+  "requires": "fishing_tier_3",
+  "results": [
+    "starcatcher:heavy_hook",
+    "starcatcher:clear_bobber",
+    "starcatcher:glowing_bobber",
+    "starcatcher:split_hook",
+    "starcatcher:seeking_worm",
+    "starcatcher:amethyst_hook",
+    "starcatcher:fish_radar"
+  ],
+  "hint": {
+    "translate": "superiorstory.guide.fishing.locked.tier_3"
+  }
+}

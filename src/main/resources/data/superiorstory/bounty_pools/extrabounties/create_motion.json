@@ -1,0 +1,118 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_rope_pulley": {
+      "rarity": "UNCOMMON"
+    },
+    "create_elevator_pulley": {
+      "rarity": "RARE"
+    },
+    "create_mechanical_bearing": {
+      "rarity": "UNCOMMON"
+    },
+    "create_clockwork_bearing": {
+      "rarity": "RARE"
+    },
+    "create_sticky_mechanical_piston": {
+      "rarity": "UNCOMMON"
+    },
+    "create_gantry_carriage": {
+      "rarity": "UNCOMMON"
+    },
+    "create_mechanical_piston": {
+      "rarity": "UNCOMMON"
+    },
+    "create_piston_extension_pole": {
+      "rarity": "COMMON"
+    },
+    "create_mechanical_roller": {
+      "rarity": "RARE"
+    },
+    "create_track": {
+      "rarity": "UNCOMMON"
+    },
+    "create_track_signal": {
+      "rarity": "RARE"
+    },
+    "create_track_station": {
+      "rarity": "RARE"
+    },
+    "create_controls": {
+      "rarity": "RARE"
+    },
+    "create_track_observer": {
+      "rarity": "RARE"
+    },
+    "create_white_sail": {
+      "rarity": "COMMON"
+    },
+    "create_controller_rail": {
+      "rarity": "COMMON"
+    },
+    "create_schedule": {
+      "rarity": "COMMON"
+    },
+    "create_mechanical_harvester": {
+      "rarity": "UNCOMMON"
+    },
+    "create_mechanical_plough": {
+      "rarity": "UNCOMMON"
+    },
+    "create_sticker": {
+      "rarity": "COMMON"
+    },
+    "create_cart_assembler": {
+      "rarity": "COMMON"
+    },
+    "create_contraption_controls": {
+      "rarity": "RARE"
+    },
+    "create_redstone_contact": {
+      "rarity": "COMMON"
+    },
+    "create_portable_storage_interface": {
+      "rarity": "UNCOMMON"
+    },
+    "create_gantry_shaft": {
+      "rarity": "COMMON"
+    },
+    "minecraft_hopper_minecart": {
+      "rarity": "COMMON"
+    },
+    "minecraft_minecart": {
+      "rarity": "COMMON"
+    },
+    "minecraft_activator_rail": {
+      "rarity": "COMMON"
+    },
+    "minecraft_detector_rail": {
+      "rarity": "COMMON"
+    },
+    "minecraft_powered_rail": {
+      "rarity": "COMMON"
+    },
+    "minecraft_rail": {
+      "rarity": "COMMON"
+    },
+    "minecraft_furnace_minecart": {
+      "rarity": "COMMON"
+    },
+    "minecraft_chest_minecart": {
+      "rarity": "COMMON"
+    },
+    "minecraft_tnt_minecart": {
+      "rarity": "COMMON"
+    },
+    "create_chain_conveyor": {
+      "rarity": "COMMON"
+    },
+    "minecraft_chain": {
+      "rarity": "COMMON"
+    },
+    "create_white_postbox": {
+      "rarity": "COMMON"
+    }
+  }
+}

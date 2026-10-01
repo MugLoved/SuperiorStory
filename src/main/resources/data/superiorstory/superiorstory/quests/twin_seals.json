@@ -1,0 +1,38 @@
+{
+  "location": {
+    "structure": "cataclysm:cursed_pyramid"
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:ignis_ashes",
+      "stage": "turned_in"
+    }
+  },
+  "also": [
+    {
+      "location": {
+        "structure": "cataclysm:frosted_prison"
+      }
+    },
+    {
+      "location": {
+        "pool": "superiorstory:safe_outposts"
+      },
+      "deliver": {
+        "type": "minecraft:villager",
+        "tag": "seal_courier",
+        "name": "Sealwright Orin"
+      }
+    }
+  ],
+  "reward": {
+    "coins": 1500,
+    "loot": "minecraft:chests/end_city_treasure",
+    "rep": 2,
+    "reward_choice": {
+      "pool": "superiorstory:quest_elite",
+      "count": 3,
+      "pick": 1
+    }
+  }
+}

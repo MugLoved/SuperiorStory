@@ -1,0 +1,23 @@
+{
+  "location": {
+    "structure": "cataclysm:kobolediator_shrine"
+  },
+  "unless": {
+    "quest": {
+      "id": "superiorstory:shrine_for_wren",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "give": {
+      "item": "minecraft:bread",
+      "quantity": 16
+    },
+    "rep": 2,
+    "reward_choice": {
+      "pool": "superiorstory:quest_advanced",
+      "count": 3,
+      "pick": 1
+    }
+  }
+}

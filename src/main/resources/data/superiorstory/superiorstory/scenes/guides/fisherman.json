@@ -1,0 +1,944 @@
+{
+  "npc": "minecraft:villager",
+  "priority": 10,
+  "if": {
+    "profession": "fisherman"
+  },
+  "mods": [
+    "starcatcher"
+  ],
+  "beats": [
+    {
+      "pool": "guides/fisherman_greeting"
+    },
+    {
+      "text": {
+        "translate": "superiorstory.guide.fishing.ask"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "superiorstory.guide.fishing.choice.job"
+          },
+          "goto": "offer",
+          "unless": {
+            "quest_stage": "active"
+          }
+        },
+        {
+          "text": {
+            "translate": "superiorstory.guide.fishing.choice.about"
+          },
+          "goto": "hand",
+          "if": {
+            "quest_stage": "active"
+          }
+        },
+        {
+          "text": {
+            "translate": "superiorstory.guide.fishing.choice.work"
+          },
+          "goto": "bounty"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.guide.fishing.choice.bye"
+          },
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "offer": [
+      {
+        "pool": "guides/fisherman_hint",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_1",
+            "stage": "none"
+          }
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_1",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/common_1",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_2",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/common_2",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_3",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/common_3",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_repeat",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/common_repeat",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_1",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/uncommon_1",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_2",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/uncommon_2",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_3",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/uncommon_3",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_repeat",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/uncommon_repeat",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_1",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/rare_1",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_2",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/rare_2",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_3",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/rare_3",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_repeat",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/rare_repeat",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_1",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/epic_1",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_2",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/epic_2",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_3",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/epic_3",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_repeat",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/epic_repeat",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_1",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/legendary_1",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_2",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/legendary_2",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_3",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/legendary_3",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.looking"
+        },
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_repeat",
+            "stage": "available"
+          }
+        },
+        "locate": {
+          "quest": "superiorstory:guides/fishing/legendary_repeat",
+          "found": "offered",
+          "failed": "nothing"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.offer.none"
+        }
+      }
+    ],
+    "offered": [
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.want"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.where"
+        },
+        "needs": "fish_1_where"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.depth"
+        },
+        "needs": "fish_1_depth"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.fluid"
+        },
+        "needs": "fish_1_fluid"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.when"
+        },
+        "needs": "fish_1_when"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.bait"
+        },
+        "needs": "fish_1_bait"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.gear"
+        },
+        "needs": "fish_1_gear"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.more"
+        },
+        "needs": "fish_1_more"
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.second"
+        },
+        "needs": [
+          "fish_2",
+          "fish_2_where"
+        ]
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.second_when"
+        },
+        "needs": [
+          "fish_2",
+          "fish_2_when"
+        ]
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.third"
+        },
+        "needs": [
+          "fish_3",
+          "fish_3_where"
+        ]
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.third_when"
+        },
+        "needs": [
+          "fish_3",
+          "fish_3_when"
+        ]
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.will_you"
+        },
+        "choices": [
+          {
+            "text": {
+              "translate": "superiorstory.guide.fishing.choice.accept"
+            },
+            "accept": true,
+            "outcome": "good",
+            "goto": "accepted"
+          },
+          {
+            "text": {
+              "translate": "superiorstory.guide.fishing.choice.decline"
+            },
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "accepted": [
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.accepted"
+        }
+      }
+    ],
+    "hand": [
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_1",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/common_1"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_2",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/common_2"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_3",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/common_3"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/common_repeat",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/common_repeat"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_1",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/uncommon_1"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_2",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/uncommon_2"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_3",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/uncommon_3"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_repeat",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/uncommon_repeat"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_1",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/rare_1"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_2",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/rare_2"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_3",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/rare_3"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_repeat",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/rare_repeat"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_1",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/epic_1"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_2",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/epic_2"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_3",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/epic_3"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_repeat",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/epic_repeat"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_1",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/legendary_1"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_2",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/legendary_2"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_3",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/legendary_3"
+        }
+      },
+      {
+        "pool": "guides/fisherman_praise",
+        "if": {
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_repeat",
+            "stage": "collected"
+          }
+        },
+        "hand_over": {
+          "quest": "superiorstory:guides/fishing/legendary_repeat"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.unlocked.tier_1"
+        },
+        "if": {
+          "unlocked": "fishing_tier_1",
+          "quest": {
+            "id": "superiorstory:guides/fishing/uncommon_1",
+            "stage": "none"
+          }
+        },
+        "accent": true
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.unlocked.tier_2"
+        },
+        "if": {
+          "unlocked": "fishing_tier_2",
+          "quest": {
+            "id": "superiorstory:guides/fishing/rare_1",
+            "stage": "none"
+          }
+        },
+        "accent": true
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.unlocked.tier_3"
+        },
+        "if": {
+          "unlocked": "fishing_tier_3",
+          "quest": {
+            "id": "superiorstory:guides/fishing/epic_1",
+            "stage": "none"
+          }
+        },
+        "accent": true
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.unlocked.tier_4"
+        },
+        "if": {
+          "unlocked": "fishing_tier_4",
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_1",
+            "stage": "none"
+          }
+        },
+        "accent": true
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.unlocked.tier_5"
+        },
+        "if": {
+          "unlocked": "fishing_tier_5",
+          "quest": {
+            "id": "superiorstory:guides/fishing/legendary_repeat",
+            "stage": "none"
+          }
+        },
+        "accent": true
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.remind"
+        },
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.where"
+        },
+        "needs": "fish_1_where",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.depth"
+        },
+        "needs": "fish_1_depth",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.fluid"
+        },
+        "needs": "fish_1_fluid",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.when"
+        },
+        "needs": "fish_1_when",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.bait"
+        },
+        "needs": "fish_1_bait",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.gear"
+        },
+        "needs": "fish_1_gear",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.more"
+        },
+        "needs": "fish_1_more",
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.second"
+        },
+        "needs": [
+          "fish_2",
+          "fish_2_where"
+        ],
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.second_when"
+        },
+        "needs": [
+          "fish_2",
+          "fish_2_when"
+        ],
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.third"
+        },
+        "needs": [
+          "fish_3",
+          "fish_3_where"
+        ],
+        "if": {
+          "quest_stage": "active"
+        }
+      },
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.fact.third_when"
+        },
+        "needs": [
+          "fish_3",
+          "fish_3_when"
+        ],
+        "if": {
+          "quest_stage": "active"
+        }
+      }
+    ],
+    "nothing": [
+      {
+        "text": {
+          "translate": "superiorstory.guide.fishing.nothing"
+        }
+      }
+    ],
+    "bounty": [
+      {
+        "text": {
+          "translate": "superiorstory.bounty.line.looking"
+        },
+        "bounty": {}
+      }
+    ]
+  }
+}

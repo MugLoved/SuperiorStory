@@ -1,0 +1,88 @@
+{
+  "requires": [
+    "ironfurnaces"
+  ],
+  "content": {
+    "ironfurnaces_augment_fuel": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_augment_speed": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_augment_generator": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_augment_factory": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_augment_blasting": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_augment_smoking": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_heater": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_item_heater": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_raw_iron": {
+      "rarity": "COMMON"
+    },
+    "minecraft_soul_campfire": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_furnace": {
+      "rarity": "COMMON"
+    },
+    "minecraft_blast_furnace": {
+      "rarity": "COMMON"
+    },
+    "minecraft_smoker": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_coal_block": {
+      "rarity": "COMMON"
+    },
+    "minecraft_coal": {
+      "rarity": "COMMON"
+    },
+    "minecraft_charcoal": {
+      "rarity": "COMMON"
+    },
+    "minecraft_campfire": {
+      "rarity": "COMMON"
+    },
+    "minecraft_raw_copper": {
+      "rarity": "COMMON"
+    },
+    "minecraft_raw_gold": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_copper_furnace": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_iron_furnace": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_silver_furnace": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_diamond_furnace": {
+      "rarity": "RARE"
+    },
+    "ironfurnaces_item_copy": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_item_spooky": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_gold_furnace": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_item_xmas": {
+      "rarity": "COMMON"
+    }
+  }
+}

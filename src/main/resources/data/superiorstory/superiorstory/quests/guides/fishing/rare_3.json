@@ -1,0 +1,39 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "rare",
+      "dimension": "minecraft:overworld",
+      "fluid": "minecraft:water",
+      "kinds": 3
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/rare_2",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "give": [
+      {
+        "item": "starcatcher:heavy_hook"
+      },
+      {
+        "item": "starcatcher:clear_bobber"
+      },
+      {
+        "item": "starcatcher:seeking_worm"
+      },
+      {
+        "item": "starcatcher:amethyst_hook"
+      }
+    ],
+    "unlock": {
+      "key": "fishing_tier_3",
+      "notify": false
+    }
+  }
+}

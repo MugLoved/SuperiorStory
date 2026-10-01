@@ -1,0 +1,175 @@
+{
+  "requires": [
+    "alexsmobs"
+  ],
+  "content": {
+    "alexsmobs_unsettling_kimono": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_stink_ray": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_music_disc_thime": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_mosquito_repellent_stew": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_music_disc_daze": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_hummingbird_feeder": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_gustmaker": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_capsid": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_sculk_boomer": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_transmutation_table": {
+      "rarity": "EPIC"
+    },
+    "alexsmobs_mysterious_worm": {
+      "rarity": "EPIC"
+    },
+    "alexsmobs_tendon_whip": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_ghostly_pickaxe": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_skreecher_soul": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_farseer_arm": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_novelty_hat": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_skelewag_sword": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_flying_fish_boots": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_cooked_catfish": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_pupfish_locator": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_squid_grapple": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_rocky_chestplate": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_straddle_helmet": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_straddle_saddle": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_froststalker_helmet": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_shield_of_the_deep": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_tarantula_hawk_elytra": {
+      "rarity": "EPIC"
+    },
+    "alexsmobs_falconry_hood": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_falconry_glove": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_enderiophage_rocket": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_leafcutter_ant_pupa": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_gongylidia": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_endolocator": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_echolocator": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_fedora": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_emu_leggings": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_boiled_emu_egg": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_hemolymph_blaster": {
+      "rarity": "EPIC"
+    },
+    "alexsmobs_pocket_sand": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_shrimp_fried_rice": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_spiked_turtle_shell": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_kangaroo_burger": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_maraca": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_sombrero": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_roadrunner_boots": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_animal_dictionary": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_crocodile_chestplate": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_ancient_dart": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_blood_sprayer": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_shark_tooth_arrow": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_moose_headgear": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_sopa_de_macaco": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_centipede_leggings": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_cooked_moose_ribs": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_frontier_cap": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_blobfish_bucket": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

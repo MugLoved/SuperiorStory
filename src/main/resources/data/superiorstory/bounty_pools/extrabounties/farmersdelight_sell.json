@@ -1,0 +1,100 @@
+{
+  "requires": [
+    "farmersdelight"
+  ],
+  "content": {
+    "farmersdelight_rich_soil": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_rice_roll_medley_block": {
+      "rarity": "RARE"
+    },
+    "farmersdelight_shepherds_pie": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_honey_glazed_ham": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_shepherds_pie_block": {
+      "rarity": "RARE"
+    },
+    "farmersdelight_honey_glazed_ham_block": {
+      "rarity": "RARE"
+    },
+    "farmersdelight_roast_chicken_block": {
+      "rarity": "RARE"
+    },
+    "farmersdelight_stuffed_pumpkin_block": {
+      "rarity": "RARE"
+    },
+    "farmersdelight_bacon_sandwich": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_roast_chicken": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_ratatouille": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_squid_ink_pasta": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_grilled_salmon": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_noodle_soup": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_bone_broth": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_cooked_rice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_glow_berry_custard": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_pasta_with_meatballs": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_baked_cod_stew": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_vegetable_soup": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_chicken_soup": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_steak_and_potatoes": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_roasted_mutton_chops": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_pasta_with_mutton_chop": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_bacon_and_eggs": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_fish_stew": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_fried_rice": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_vegetable_noodles": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_mushroom_rice": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_beef_stew": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_pumpkin_soup": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

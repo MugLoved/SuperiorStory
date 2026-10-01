@@ -1,0 +1,52 @@
+{
+  "trigger": "reward_template",
+  "beats": [
+    {
+      "text": {
+        "translate": "superiorstory.reward.prompt"
+      },
+      "choices": [
+        {
+          "text": {
+            "translate": "superiorstory.reward.row.1"
+          },
+          "if": {
+            "reward_option": 1
+          },
+          "reward_pick": 1,
+          "id": "reward/pick/1"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.reward.row.2"
+          },
+          "if": {
+            "reward_option": 2
+          },
+          "reward_pick": 2,
+          "id": "reward/pick/2"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.reward.row.3"
+          },
+          "if": {
+            "reward_option": 3
+          },
+          "reward_pick": 3,
+          "id": "reward/pick/3"
+        },
+        {
+          "text": {
+            "translate": "superiorstory.reward.row.4"
+          },
+          "if": {
+            "reward_option": 4
+          },
+          "reward_pick": 4,
+          "id": "reward/pick/4"
+        }
+      ]
+    }
+  ]
+}

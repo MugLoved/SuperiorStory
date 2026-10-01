@@ -1,0 +1,22 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "rare",
+      "dimension": "minecraft:overworld",
+      "fluid": "minecraft:water",
+      "kinds": 2
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/rare_1",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "coins": 200
+  }
+}

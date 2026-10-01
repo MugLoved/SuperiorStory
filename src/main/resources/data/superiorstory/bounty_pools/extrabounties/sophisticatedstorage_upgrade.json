@@ -1,0 +1,67 @@
+{
+  "requires": [
+    "sophisticatedstorage"
+  ],
+  "content": {
+    "sophisticatedstorage_crafting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_smoking_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_smelting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_void_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_diamond_to_netherite_tier_upgrade": {
+      "rarity": "EPIC"
+    },
+    "sophisticatedstorage_gold_to_diamond_tier_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedstorage_iron_to_gold_tier_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_copper_to_iron_tier_upgrade": {
+      "rarity": "COMMON"
+    },
+    "sophisticatedstorage_basic_to_copper_tier_upgrade": {
+      "rarity": "COMMON"
+    },
+    "sophisticatedstorage_pickup_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_blasting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_feeding_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedstorage_magnet_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedstorage_filter_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_compacting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_stack_upgrade_tier_1": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_compression_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_hopper_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_jukebox_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_stonecutter_upgrade": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

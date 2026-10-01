@@ -1,0 +1,100 @@
+{
+  "requires": [
+    "alexscaves"
+  ],
+  "content": {
+    "alexscaves_metal_swarf": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_galena": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_limestone": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_block_of_chocolate": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_coprolith": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_dough_block": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_cookie_block": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_radrock": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_abyssmarine": {
+      "rarity": "RARE"
+    },
+    "alexscaves_guanostone": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_block_of_frosting": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_block_of_vanilla_frosting": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_block_of_chocolate_frosting": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_cake_layer": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_guano": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_sulfur_dust": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_uranium": {
+      "rarity": "RARE"
+    },
+    "alexscaves_heavy_bone": {
+      "rarity": "RARE"
+    },
+    "alexscaves_ferrouslime_ball": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_fissile_core": {
+      "rarity": "RARE"
+    },
+    "alexscaves_toxic_paste": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_raw_scarlet_neodymium": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_raw_azure_neodymium": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_in_acid_bucket": {
+      "rarity": "UNCOMMON"
+    },
+    "alexscaves_in_radon_bottle": {
+      "rarity": "RARE"
+    },
+    "alexscaves_in_abyssal_chasm_tablet": {
+      "rarity": "RARE"
+    },
+    "alexscaves_in_toxic_caves_tablet": {
+      "rarity": "RARE"
+    },
+    "alexscaves_in_primordial_caves_tablet": {
+      "rarity": "RARE"
+    },
+    "alexscaves_in_magnetic_caves_tablet": {
+      "rarity": "RARE"
+    },
+    "alexscaves_in_candy_cavity_tablet": {
+      "rarity": "RARE"
+    },
+    "alexscaves_in_forlorn_hollows_tablet": {
+      "rarity": "RARE"
+    }
+  }
+}

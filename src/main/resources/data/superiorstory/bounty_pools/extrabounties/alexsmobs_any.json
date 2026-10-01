@@ -1,0 +1,166 @@
+{
+  "requires": [
+    "alexsmobs"
+  ],
+  "content": {
+    "alexsmobs_dropbear_claw": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_fish_bones": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_flying_fish": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_lost_tentacle": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_emu_feather": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_fish_oil": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_cockroach_ootheca": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_soul_heart": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_ambergris": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_blobfish": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_mimicream": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_moose_antler": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_mosquito_larva": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_centipede_leg": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_bear_fur": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_crocodile_scute": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_gazelle_horn": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_rocky_shell": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_shed_snake_skin": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_pigshoes": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_maggot": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_blood_sac": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_cockroach_wing": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_hemolymph_sac": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_rainbow_jelly": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_mungal_spores": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_potted_flutter": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_raccoon_tail": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_guster_eye": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_spiked_scute": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_caiman_egg": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_terrapin_egg": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_platypus_egg": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_crocodile_egg": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_banana_slug_slime": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_stink_bottle": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_cachalot_whale_tooth": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_tarantula_hawk_wing_fragment": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_tarantula_hawk_wing": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_serrated_shark_tooth": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_froststalker_horn": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_triops_eggs": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_warped_muscle": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_straddlite": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_elastic_tendon": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_bone_serpent_tooth": {
+      "rarity": "RARE"
+    },
+    "alexsmobs_cockroach_wing_fragment": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_komodo_spit": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_roadrunner_feather": {
+      "rarity": "COMMON"
+    },
+    "alexsmobs_shark_tooth": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_rattlesnake_rattle": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_mosquito_proboscis": {
+      "rarity": "UNCOMMON"
+    },
+    "alexsmobs_bison_fur": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "structures": "mebahelcreaturesdwarven:raldbthar",
+  "boss": [
+    "mebahelcreaturesdwarven:dwarven_centurion"
+  ],
+  "look": "a dwarven ruin patrolled by mechanical guardians"
+}

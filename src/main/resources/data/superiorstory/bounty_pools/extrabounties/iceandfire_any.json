@@ -1,0 +1,292 @@
+{
+  "requires": [
+    "iceandfire"
+  ],
+  "content": {
+    "iceandfire_troll_tusk": {
+      "rarity": "RARE"
+    },
+    "iceandfire_fire_dragon_heart": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_lightning_dragon_blood": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_red": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scale_block_red": {
+      "rarity": "RARE"
+    },
+    "iceandfire_summoning_crystal_fire": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dread_shard": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragon_stick": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_sea_serpent_scale_block_teal": {
+      "rarity": "RARE"
+    },
+    "iceandfire_amphithere_feather": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_silver_ingot": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragon_skull_fire": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_sea_serpent_scales_red": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragon_skull_ice": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_witherbone": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscale_electric": {
+      "rarity": "RARE"
+    },
+    "iceandfire_myrmex_jungle_egg": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_copper": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_fang": {
+      "rarity": "RARE"
+    },
+    "iceandfire_myrmex_jungle_resin": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_manuscript": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscale_black": {
+      "rarity": "RARE"
+    },
+    "iceandfire_seaserpent_skull": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scale_block_bronze": {
+      "rarity": "RARE"
+    },
+    "iceandfire_hippogryph_skull": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscales_bronze": {
+      "rarity": "RARE"
+    },
+    "iceandfire_hippocampus_fin": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscale_sapphire": {
+      "rarity": "RARE"
+    },
+    "iceandfire_cyclops_skull": {
+      "rarity": "RARE"
+    },
+    "iceandfire_fire_dragon_blood": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_white": {
+      "rarity": "RARE"
+    },
+    "iceandfire_deathworm_egg": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_gray": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_amythest": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scales_teal": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_sapphire": {
+      "rarity": "RARE"
+    },
+    "iceandfire_lightning_dragon_heart": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_shiny_scales": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscales_silver": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_copper": {
+      "rarity": "RARE"
+    },
+    "iceandfire_cockatrice_skull": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sapphire_gem": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscales_electric": {
+      "rarity": "RARE"
+    },
+    "iceandfire_stymphalian_skull": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_sea_serpent_scales_purple": {
+      "rarity": "RARE"
+    },
+    "iceandfire_cockatrice_eye": {
+      "rarity": "RARE"
+    },
+    "iceandfire_myrmex_jungle_chitin": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_ice_dragon_blood": {
+      "rarity": "RARE"
+    },
+    "iceandfire_deathworm_chitin_white": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonbone": {
+      "rarity": "RARE"
+    },
+    "iceandfire_rotten_egg": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscales_gray": {
+      "rarity": "RARE"
+    },
+    "iceandfire_siren_tear": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_green": {
+      "rarity": "RARE"
+    },
+    "iceandfire_myrmex_desert_egg": {
+      "rarity": "RARE"
+    },
+    "iceandfire_hydra_heart": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_ectoplasm": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_bronze": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scales_blue": {
+      "rarity": "RARE"
+    },
+    "iceandfire_deathworm_chitin_yellow": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscales_white": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_green": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_blue": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_black": {
+      "rarity": "RARE"
+    },
+    "iceandfire_troll_skull": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscales_amythest": {
+      "rarity": "RARE"
+    },
+    "iceandfire_ambrosia": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragon_skull_lightning": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_summoning_crystal_lightning": {
+      "rarity": "RARE"
+    },
+    "iceandfire_deathworm_egg_giant": {
+      "rarity": "RARE"
+    },
+    "iceandfire_hippogryph_egg": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_blue": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragon_bone_block": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scales_deepblue": {
+      "rarity": "RARE"
+    },
+    "iceandfire_hydra_fang": {
+      "rarity": "RARE"
+    },
+    "iceandfire_deathworm_chitin_red": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_summoning_crystal_ice": {
+      "rarity": "RARE"
+    },
+    "iceandfire_deathworm_tounge": {
+      "rarity": "RARE"
+    },
+    "iceandfire_amphithere_skull": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scale_block_green": {
+      "rarity": "RARE"
+    },
+    "iceandfire_myrmex_desert_chitin": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_pixie_dust": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_dragonscale_silver": {
+      "rarity": "RARE"
+    },
+    "iceandfire_pixie_wings": {
+      "rarity": "RARE"
+    },
+    "iceandfire_ice_dragon_heart": {
+      "rarity": "EPIC"
+    },
+    "iceandfire_sea_serpent_scales_bronze": {
+      "rarity": "RARE"
+    },
+    "iceandfire_dragonscale_red": {
+      "rarity": "RARE"
+    },
+    "iceandfire_stymphalian_bird_feather": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_hippogryph_talon": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_sea_serpent_scale_block_deepblue": {
+      "rarity": "RARE"
+    },
+    "iceandfire_myrmex_desert_resin": {
+      "rarity": "UNCOMMON"
+    },
+    "iceandfire_hydra_skull": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scales_green": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scale_block_purple": {
+      "rarity": "RARE"
+    },
+    "iceandfire_sea_serpent_scale_block_blue": {
+      "rarity": "RARE"
+    }
+  }
+}

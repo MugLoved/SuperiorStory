@@ -1,0 +1,36 @@
+{
+  "rewards": [
+    {
+      "give": [
+        "fantasy_armor:hero_helmet",
+        "fantasy_armor:hero_chestplate",
+        "fantasy_armor:hero_leggings",
+        "fantasy_armor:hero_boots"
+      ]
+    },
+    {
+      "give": [
+        "fantasy_armor:dragonslayer_helmet",
+        "fantasy_armor:dragonslayer_chestplate",
+        "fantasy_armor:dragonslayer_leggings",
+        "fantasy_armor:dragonslayer_boots"
+      ]
+    },
+    {
+      "give": [
+        "fantasy_armor:golden_horns_helmet",
+        "fantasy_armor:golden_horns_chestplate",
+        "fantasy_armor:golden_horns_leggings",
+        "fantasy_armor:golden_horns_boots"
+      ]
+    },
+    {
+      "give": [
+        "fantasy_armor:crucible_knight_helmet",
+        "fantasy_armor:crucible_knight_chestplate",
+        "fantasy_armor:crucible_knight_leggings",
+        "fantasy_armor:crucible_knight_boots"
+      ]
+    }
+  ]
+}

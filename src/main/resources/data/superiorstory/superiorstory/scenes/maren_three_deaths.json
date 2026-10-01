@@ -1,0 +1,151 @@
+{
+  "npc": "story_alchemist",
+  "priority": 30,
+  "if": {
+    "quest": {
+      "id": "superiorstory:twin_seals",
+      "stage": "turned_in"
+    }
+  },
+  "beats": [
+    [
+      "The seals are broken and the hills are quieter for it. There is one more thing I would ask of you.",
+      "Orin's word reached me, and I have not stopped thinking about it since. Sit; there is a last errand."
+    ],
+    {
+      "text": [
+        "Three old things slumber under three old places, and they are the reason the seals existed at all. {boss} first, in the {structure}. I won't pretend it's a fair ask.",
+        "The three keepers must die, and I mean all three. {boss} is the first, {danger}, in the {structure}."
+      ],
+      "if": {
+        "boss_tier": {
+          "min": 7
+        }
+      },
+      "accent": true,
+      "pace": 1.3
+    },
+    {
+      "text": [
+        "Three keepers still hold the wards. {boss} first, in the {structure}: {danger}, but you have earned this fight.",
+        "Three keepers, three fights. Start with {boss}, in the {structure}."
+      ],
+      "if": {
+        "boss_tier": {
+          "min": 4,
+          "max": 6
+        }
+      }
+    },
+    {
+      "text": [
+        "Three small keepers, three small errands. Start with {boss}, in the {structure}.",
+        "Three keepers still linger. The nearest is {boss}, in the {structure}."
+      ],
+      "if": {
+        "boss_tier": {
+          "min": 1,
+          "max": 3
+        }
+      }
+    },
+    {
+      "text": "Three keepers hold the last wards. I cannot say what they are. Only where they sleep.",
+      "unless": {
+        "boss_tier": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "text": [
+        "Well? Will you finish it?",
+        "Are you ready to end it?"
+      ],
+      "choices": [
+        {
+          "text": "I'll hunt all three.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:three_deaths",
+              "stage": "available"
+            }
+          },
+          "goto": "search"
+        },
+        {
+          "text": "It is done. All three.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:three_deaths",
+              "stage": "active"
+            }
+          },
+          "turn_in": "superiorstory:three_deaths",
+          "outcome": "good",
+          "id": "alchemist/three_deaths_turned_in",
+          "goto": "thanks"
+        },
+        {
+          "text": "Not now.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "search": [
+      {
+        "text": "Let me mark them for you...",
+        "locate": {
+          "quest": "superiorstory:three_deaths",
+          "found": "found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found": [
+      [
+        "The first lies in the {structure}, {distance} blocks to the {direction}.",
+        "Start with the {structure}: {distance} blocks {direction} of here."
+      ],
+      "The other two are already marked on your map. Do them in any order.",
+      {
+        "text": "All three, then. Will you go?",
+        "choices": [
+          {
+            "text": "I'll go.",
+            "accept": "superiorstory:three_deaths",
+            "outcome": "good",
+            "id": "alchemist/three_deaths_accepted",
+            "goto": "accepted"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      "I cannot place all three from here. Give the maps a little time."
+    ],
+    "accepted": [
+      "Then go. Do not come back until all three are dead.",
+      "Three markers, three keepers. Good hunting."
+    ],
+    "thanks": [
+      {
+        "text": "All three. I had stopped daring to hope.",
+        "accent": true
+      },
+      "Take what the vault gave up, and my thanks with it. The hills owe you."
+    ]
+  },
+  "unless": {
+    "quest": {
+      "id": "superiorstory:three_deaths",
+      "stage": "turned_in"
+    }
+  }
+}

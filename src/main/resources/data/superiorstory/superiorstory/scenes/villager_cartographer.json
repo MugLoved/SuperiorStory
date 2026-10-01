@@ -1,0 +1,455 @@
+{
+  "npc": "story_cartographer",
+  "beats": [
+    {"pool":"cartographer_greeting"},
+    {
+      "text": "So you took Tobin's bread over my coin. I'll remember that, friend.",
+      "if": {
+        "quest": {
+          "id": "superiorstory:shrine_for_tobin",
+          "stage": "turned_in"
+        }
+      }
+    },
+    {
+      "text": "The candles burn low at this hour. Rare visitors are the best kind.",
+      "if": {
+        "time": "night"
+      }
+    },
+    {
+      "text": "Thunder makes the ink jump. Hold the map still for me.",
+      "if": {
+        "weather": "thunder"
+      }
+    },
+    {
+      "text": "A friend of the shop! Ask, and I'll dig out something better.",
+      "if": {
+        "rep": {
+          "min": 1
+        }
+      }
+    },
+    {
+      "text": [
+        "Anything out there you'd care to see?",
+        "Looking for somewhere worth the walk?"
+      ],
+      "choices": [
+        {
+          "text": "The deep is quiet now.",
+          "if": {
+            "quest": {
+              "id": "superiorstory:sunken_proof",
+              "stage": "boss_defeated"
+            }
+          },
+          "turn_in": "superiorstory:sunken_proof",
+          "outcome": "good",
+          "id": "cartographer/sunken_turned_in",
+          "goto": "diving_thanks"
+        },
+        {
+          "text": "Show me something worth seeing.",
+          "goto": "search"
+        },
+        {
+          "text": "Do you have paid work?",
+          "goto": "work"
+        },
+        {
+          "text": "Not now.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "search": [
+      {
+        "text": "Let me consult my charts...",
+        "locate": {
+          "general": true,
+          "found": "found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found": [
+      [
+        "Here: the {structure}. {distance} blocks to the {direction}, if my inking holds.",
+        "I've a mark for you: the {structure}, {distance} blocks {direction}. Trust the ink over the locals.",
+        "The nearest worth the walk is the {structure}, {distance} blocks {direction}. Mind the {biome|wilds}."
+      ],
+      {
+        "needs": "look",
+        "text": [
+          "The sketches show {look}.",
+          "Travelers describe {look}."
+        ]
+      },
+      {
+        "text": [
+          "{boss} nests there, {danger}. Bring friends, or a good will.",
+          "Fair warning: {boss} keeps the place, and it is {danger}."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 7
+          }
+        },
+        "accent": true,
+        "pace": 1.3
+      },
+      {
+        "text": [
+          "{boss} holds it, {danger}. Doable, if you come prepared.",
+          "{boss} is in residence. {danger}, but every giant falls eventually."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      },
+      {
+        "text": [
+          "{boss} lurks there, {danger}. A decent test of your gear.",
+          "It's guarded by {boss}, {danger}. Not much of a threat if you're careful."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      },
+      {
+        "text": "I {~uncertainty} what waits inside. That's part of the charm.",
+        "unless": {
+          "boss_tier": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "text": "It's {~map_location} now. Will you {~set_out}?",
+        "choices": [
+          {
+            "text": "I'll go.",
+            "accept": true,
+            "outcome": "good",
+            "id": "cartographer/accepted",
+            "goto": "accepted"
+          },
+          {
+            "text": "Somewhere else.",
+            "goto": "search"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      "My charts are silent. Either you've seen it all, or nobody has drawn the rest yet.",
+      "Nothing new on the desk. Come back after the next expedition returns."
+    ],
+    "accepted": [
+      "Then mind the ink on the way out, and send me word of what you find.",
+      "Off with you, then. A map is only good once someone has walked it."
+    ],
+    "diving": [
+      {
+        "text": "Let me think of the deep places...",
+        "locate": {
+          "quest": "superiorstory:sunken_proof",
+          "found": "diving_found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "diving_found": [
+      "There's the {structure}, {distance} blocks to the {direction}, down where the light gives out.",
+      {
+        "text": [
+          "{boss} nests there, {danger}. Bring friends, or a good will.",
+          "Fair warning: {boss} keeps the place, and it is {danger}."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 7
+          }
+        },
+        "accent": true,
+        "pace": 1.3
+      },
+      {
+        "text": [
+          "{boss} holds it, {danger}. Doable, if you come prepared.",
+          "{boss} is in residence. {danger}, but every giant falls eventually."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      },
+      {
+        "text": [
+          "{boss} lurks there, {danger}. A decent test of your gear.",
+          "It's guarded by {boss}, {danger}. Not much of a threat if you're careful."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      },
+      {
+        "text": "I {~uncertainty} what waits inside. That's part of the charm.",
+        "unless": {
+          "boss_tier": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "text": "Bring proof it is gone, and I'll pay. Will you dive?",
+        "choices": [
+          {
+            "text": "I'll dive.",
+            "accept": "superiorstory:sunken_proof",
+            "outcome": "good",
+            "id": "cartographer/sunken_accepted",
+            "goto": "diving_accepted"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "diving_accepted": [
+      "Then keep your breath and your wits. Come back when the deep is quiet.",
+      "Good. Take breathing gear, and don't linger in the cold."
+    ],
+    "diving_thanks": [
+      {
+        "text": [
+          "Quiet, you say? Then the charts can finally have their blank spot filled.",
+          "You went down there and came back. I'll ink your name beside it."
+        ],
+        "accent": true
+      },
+      "Here is your payment, and a friend's discount on my rumors from now on."
+    ],
+    "work": [
+      {
+        "text": [
+          "Paid work? Depends on what you can survive.",
+          "I always have something; the question is whether you'll come back from it."
+        ],
+        "choices": [
+          {
+            "text": "Something in deep water.",
+            "if": {
+              "quest": {
+                "id": "superiorstory:sunken_proof",
+                "stage": "available"
+              }
+            },
+            "goto": "diving"
+          },
+          {
+            "text": "I hear the altar of the abyss stirs.",
+            "if": {
+              "quest": {
+                "id": "superiorstory:abyssal_offering",
+                "stage": "available"
+              }
+            },
+            "goto": "abyss"
+          },
+          {
+            "text": "Something in the desert.",
+            "if": {
+              "quest": {
+                "id": "superiorstory:shrine_for_wren",
+                "stage": "available"
+              }
+            },
+            "unless": {
+              "quest": {
+                "id": "superiorstory:shrine_for_tobin",
+                "stage": "active"
+              }
+            },
+            "goto": "shrine"
+          },
+          {
+            "text": "Never mind.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "abyss": [
+      "There's an Altar of the Abyss out there, and it will call the Leviathan to you, if you can craft the offering. Nautilus shell, athame, coral, a block of diamond and a heart of the sea.",
+      {
+        "text": "Bring me its claws. Not the egg; the claws. Tell me where to send you?",
+        "choices": [
+          {
+            "text": "Find me a deep place.",
+            "goto": "abyss_search"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "abyss_search": [
+      {
+        "text": "Let me look for a fitting shore...",
+        "locate": {
+          "quest": "superiorstory:abyssal_offering",
+          "found": "abyss_found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "abyss_found": [
+      "The Sunken City is the Leviathan's own home: {distance} blocks to the {direction}. Or call it up yourself at an altar, and fight it on your terms.",
+      {
+        "text": [
+          "{boss} is {danger}. I won't pretend otherwise. Do not go down there unprepared.",
+          "You'd be facing {boss}. {danger}. Prepare like it's your last day."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 7
+          }
+        },
+        "accent": true,
+        "pace": 1.3
+      },
+      {
+        "text": [
+          "{boss}, {danger}. You've the gear for it, I think.",
+          "It's {boss}: {danger}, but a fair fight for a prepared soul."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 4,
+            "max": 6
+          }
+        }
+      },
+      {
+        "text": [
+          "{boss} is {danger}. A test, not a death sentence.",
+          "Only {boss}, {danger}. Bring good armor."
+        ],
+        "if": {
+          "boss_tier": {
+            "min": 1,
+            "max": 3
+          }
+        }
+      },
+      {
+        "text": "I couldn't say what it is. Only that it guards the claws.",
+        "unless": {
+          "boss_tier": {
+            "min": 1
+          }
+        }
+      },
+      {
+        "text": "Will you fetch me {item}?",
+        "choices": [
+          {
+            "text": "I'll fetch it.",
+            "accept": "superiorstory:abyssal_offering",
+            "outcome": "good",
+            "id": "cartographer/abyss_accepted",
+            "goto": "abyss_accepted"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "abyss_accepted": [
+      "Then bring them back to me, and mind the tide.",
+      "Good. I'll clear a wall for them."
+    ],
+    "shrine": [
+      [
+        "Tobin wants the desert shrine flattened. I want its champion dead and its inscriptions left standing. Two ways to the same fight, so pick your side.",
+        "The old kobold shrine in the desert. Kill the champion, leave the carvings. I'll pay in coin, not bread."
+      ],
+      {
+        "text": "Shall I mark it for you?",
+        "choices": [
+          {
+            "text": "Mark it.",
+            "goto": "shrine_search"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "shrine_search": [
+      {
+        "text": "One moment, my charts are fussy...",
+        "locate": {
+          "quest": "superiorstory:shrine_for_wren",
+          "found": "shrine_found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "shrine_found": [
+      "The shrine is {distance} blocks to the {direction}, out in the {biome|sand}.",
+      {
+        "needs": "boss",
+        "text": "{boss} keeps it, {danger|and few return}.",
+        "accent": true
+      },
+      {
+        "text": "It's {~map_location}. Will you {~set_out}?",
+        "choices": [
+          {
+            "text": "I'll go.",
+            "accept": "superiorstory:shrine_for_wren",
+            "outcome": "good",
+            "id": "cartographer/shrine_accepted",
+            "goto": "shrine_accepted"
+          },
+          {
+            "text": "Not for me.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "shrine_accepted": [
+      "Coin on delivery, then. Mind the sand in the ink."
+    ]
+  }
+}

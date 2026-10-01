@@ -1,0 +1,15 @@
+{
+  "location": {
+    "structure": "cataclysm:sunken_city"
+  },
+  "repeatable": true,
+  "cooldown": "1d",
+  "reward": {
+    "rep": 1,
+    "reward_choice": {
+      "pool": "superiorstory:quest_elite",
+      "count": 3,
+      "pick": 1
+    }
+  }
+}

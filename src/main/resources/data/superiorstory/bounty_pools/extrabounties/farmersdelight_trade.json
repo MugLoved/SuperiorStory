@@ -1,0 +1,94 @@
+{
+  "requires": [
+    "farmersdelight"
+  ],
+  "content": {
+    "farmersdelight_nether_salad": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_fruit_salad": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_mixed_salad": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_stuffed_pumpkin": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_stuffed_potato": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_dumplings": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_barbecue_stick": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_egg_sandwich": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_chocolate_pie": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_kelp_roll_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cabbage_rolls": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_melon_popsicle": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_honey_cookie": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_sweet_berry_cookie": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_apple_pie": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_sweet_berry_cheesecake": {
+      "rarity": "RARE"
+    },
+    "farmersdelight_kelp_roll": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_apple_pie_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_chocolate_pie_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_sweet_berry_cheesecake_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_salmon_roll": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_cod_roll": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_chicken_sandwich": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_mutton_wrap": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_hamburger": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_hot_cocoa": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_tomato_sauce": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_melon_juice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_apple_cider": {
+      "rarity": "COMMON"
+    }
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "rewards": [
+    {
+      "give": "superior_affixes:orb_of_infusion",
+      "weight": 8,
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_infusion",
+        "quantity": 2
+      },
+      "weight": 8,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_renewal",
+      "weight": 8,
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_renewal",
+        "quantity": 2
+      },
+      "weight": 8,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_imbuement",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_imbuement",
+        "quantity": 2
+      },
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_dissonance",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_dissonance",
+        "quantity": 2
+      },
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:create_machines_loot_box",
+      "weight": 6
+    },
+    {
+      "give": "superior_gambling:create_switches_loot_box",
+      "weight": 6
+    },
+    {
+      "give": "superior_gambling:create_gears_loot_box",
+      "weight": 6
+    },
+    {
+      "give": "superior_gambling:create_parts_loot_box",
+      "weight": 6
+    },
+    {
+      "give": "superior_gambling:food_loot_box",
+      "weight": 8
+    },
+    {
+      "give": "superior_gambling:bookshelf_loot_box",
+      "weight": 6
+    },
+    {
+      "give": "superior_gambling:starter_artifacts_loot_box",
+      "weight": 3,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:artifacts_loot_box",
+      "weight": 3,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:common_gem_loot_box",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:rare_gem_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:uncommon_gem_loot_box",
+      "weight": 3
+    },
+    {
+      "give": "superior_gambling:common_ammo_crate",
+      "weight": 6
+    },
+    {
+      "give": "superior_gambling:common_helmet_loot_box",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:rare_helmet_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:common_chestplate_loot_box",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:rare_chestplate_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:common_leggings_loot_box",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:rare_leggings_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:common_boots_loot_box",
+      "weight": 6,
+      "unless": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_gambling:rare_boots_loot_box",
+      "weight": 6,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_ascension",
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      },
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_ascension",
+        "quantity": 2
+      },
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": "superior_affixes:orb_of_socketing",
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 5
+        }
+      },
+      "unless": {
+        "rep": {
+          "min": 8
+        }
+      }
+    },
+    {
+      "give": {
+        "item": "superior_affixes:orb_of_socketing",
+        "quantity": 2
+      },
+      "weight": 4,
+      "if": {
+        "rep": {
+          "min": 8
+        }
+      }
+    }
+  ]
+}

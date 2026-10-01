@@ -1,0 +1,103 @@
+{
+  "requires": [
+    "quark"
+  ],
+  "content": {
+    "quark_yellow_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_green_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_feeding_trough": {
+      "rarity": "COMMON"
+    },
+    "quark_ender_watcher": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_crafter": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_trowel": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_bottled_cloud": {
+      "rarity": "RARE"
+    },
+    "quark_abacus": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_indigo_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_blue_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_orange_blossom_sapling": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_blue_blossom_sapling": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_green_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_redstone_randomizer": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_red_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_indigo_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_black_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_violet_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_white_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_soul_bead": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_diamond_heart": {
+      "rarity": "RARE"
+    },
+    "quark_blue_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_yellow_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_orange_corundum": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_chute": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_gravisand": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_lavender_blossom_sapling": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_orange_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_red_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_black_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_violet_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_white_corundum_cluster": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "end": "skill_tree",
+  "beats": [
+    {"translate": "superiorstory.beat.1"},
+    {"translate": "superiorstory.beat.2"},
+    {
+      "text": {"translate": "superiorstory.beat.3"},
+      "accent": true,
+      "pace": 2.1,
+      "choices": [{"translate": "superiorstory.choice.where"}, {"translate": "superiorstory.choice.who"}]
+    },
+    {"translate": "superiorstory.beat.4"},
+    {"text": {"translate": "superiorstory.beat.5"}, "pace": 1.2}
+  ]
+}

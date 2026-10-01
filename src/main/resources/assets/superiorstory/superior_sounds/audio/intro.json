@@ -1,0 +1,25 @@
+{
+  "schema_version": 3,
+  "groups": {
+    "intro_music": {
+      "sounds": ["ambient.hum"],
+      "loop": true,
+      "fade_ticks": 36
+    }
+  },
+  "rules": {
+    "intro_music": {
+      "group": "intro_music",
+      "music": true,
+      "priority": 1000,
+      "interrupt": "fade_replace",
+      "handoff": "resume_previous",
+      "when": {"superiorstory:scene_active": true}
+    },
+    "type": {"sound": "ui.type", "event": "superiorstory:type"},
+    "hover": {"sound": "ui.hover", "event": "superiorstory:hover"},
+    "select": {"sound": "ui.select", "event": "superiorstory:select"},
+    "appear": {"sound": "ui.appear", "event": "superiorstory:appear"},
+    "ping": {"sound": "ui.appear", "event": "superiorstory:ping"}
+  }
+}

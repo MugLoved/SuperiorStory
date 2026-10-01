@@ -1,0 +1,15 @@
+{
+  "requires": "fishing_tier_4",
+  "results": [
+    "starcatcher:golden_bobber",
+    "starcatcher:gold_hook",
+    "starcatcher:echoing_hook",
+    "starcatcher:frozen_hook",
+    "starcatcher:sculk_bait",
+    "starcatcher:meteorological_bait",
+    "starcatcher:cloud_bobber"
+  ],
+  "hint": {
+    "translate": "superiorstory.guide.fishing.locked.tier_4"
+  }
+}

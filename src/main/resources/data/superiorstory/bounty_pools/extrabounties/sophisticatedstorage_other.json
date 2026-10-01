@@ -1,0 +1,22 @@
+{
+  "requires": [
+    "sophisticatedstorage"
+  ],
+  "content": {
+    "sophisticatedstorage_controller": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_storage_link": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_storage_input": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_storage_io": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedstorage_storage_output": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

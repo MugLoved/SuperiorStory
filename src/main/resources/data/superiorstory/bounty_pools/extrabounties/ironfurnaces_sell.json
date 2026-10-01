@@ -1,0 +1,76 @@
+{
+  "requires": [
+    "ironfurnaces"
+  ],
+  "content": {
+    "ironfurnaces_upgrade_gold2": {
+      "rarity": "RARE"
+    },
+    "ironfurnaces_upgrade_silver2": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_heater": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_upgrade_diamond": {
+      "rarity": "RARE"
+    },
+    "ironfurnaces_upgrade_iron": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_augment_fuel": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_upgrade_emerald": {
+      "rarity": "RARE"
+    },
+    "ironfurnaces_item_heater": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_upgrade_silver": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_upgrade_copper": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_upgrade_netherite": {
+      "rarity": "LEGENDARY"
+    },
+    "ironfurnaces_upgrade_obsidian2": {
+      "rarity": "RARE"
+    },
+    "ironfurnaces_upgrade_gold": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_augment_speed": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_augment_smoking": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_rainbow_core": {
+      "rarity": "EPIC"
+    },
+    "ironfurnaces_upgrade_obsidian": {
+      "rarity": "RARE"
+    },
+    "ironfurnaces_augment_generator": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_augment_blasting": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_upgrade_iron2": {
+      "rarity": "COMMON"
+    },
+    "ironfurnaces_rainbow_plating": {
+      "rarity": "EPIC"
+    },
+    "ironfurnaces_augment_factory": {
+      "rarity": "UNCOMMON"
+    },
+    "ironfurnaces_upgrade_crystal": {
+      "rarity": "RARE"
+    }
+  }
+}

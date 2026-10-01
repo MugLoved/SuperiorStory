@@ -1,0 +1,12 @@
+{
+  "requires": [
+    "quark"
+  ],
+  "objectives": [
+    "quark_any"
+  ],
+  "rewards": [
+    "quark_rew",
+    "quark_any"
+  ]
+}

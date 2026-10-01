@@ -1,0 +1,42 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "epic",
+      "dimension": [
+        "minecraft:overworld",
+        "minecraft:the_nether"
+      ],
+      "fluid": [
+        "minecraft:water",
+        "minecraft:lava"
+      ],
+      "kinds": 2
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/epic_2",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "give": [
+      {
+        "item": "starcatcher:golden_bobber"
+      },
+      {
+        "item": "starcatcher:meteorological_bait"
+      },
+      {
+        "item": "starcatcher:cloud_bobber"
+      }
+    ],
+    "unlock": {
+      "key": "fishing_tier_4",
+      "notify": false
+    }
+  }
+}

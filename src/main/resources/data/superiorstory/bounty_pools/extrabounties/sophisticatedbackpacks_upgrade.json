@@ -1,0 +1,76 @@
+{
+  "requires": [
+    "sophisticatedbackpacks"
+  ],
+  "content": {
+    "sophisticatedbackpacks_void_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_restock_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_deposit_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_refill_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_inception_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedbackpacks_everlasting_upgrade": {
+      "rarity": "EPIC"
+    },
+    "sophisticatedbackpacks_smelting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_smoking_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_blasting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_crafting_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_stack_upgrade_starter_tier": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_stonecutter_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_jukebox_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_tool_swapper_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_tank_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedbackpacks_battery_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedbackpacks_anvil_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_pump_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedbackpacks_pickup_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_filter_upgrade": {
+      "rarity": "UNCOMMON"
+    },
+    "sophisticatedbackpacks_magnet_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedbackpacks_feeding_upgrade": {
+      "rarity": "RARE"
+    },
+    "sophisticatedbackpacks_compacting_upgrade": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

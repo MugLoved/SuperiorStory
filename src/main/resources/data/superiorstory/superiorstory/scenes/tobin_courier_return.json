@@ -1,0 +1,41 @@
+{
+  "npc": "story_villager",
+  "priority": 35,
+  "if": {
+    "quest": {
+      "id": "superiorstory:courier_letter",
+      "stage": "active"
+    }
+  },
+  "beats": [
+    [
+      "Well? Did the letter find its way?",
+      "You're back. Was the innkeeper glad of the letter?"
+    ],
+    {
+      "text": "Tell me it was delivered.",
+      "choices": [
+        {
+          "text": "It's delivered.",
+          "turn_in": "superiorstory:courier_letter",
+          "outcome": "good",
+          "id": "tobin/courier_done",
+          "goto": "thanks"
+        },
+        {
+          "text": "Still on the road.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "thanks": [
+      {
+        "text": "Delivered, and no trouble on the road! {~approval}.",
+        "accent": true
+      },
+      "There's a few coins in it, and my thanks. I'll not forget the favour."
+    ]
+  }
+}

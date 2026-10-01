@@ -1,0 +1,66 @@
+[
+  {
+    "structures": "irons_spellbooks:*",
+    "keywords": ["spellcasting", "arcane"]
+  },
+  {
+    "structures": "irons_spellbooks:ancient_battleground",
+    "name": "Legion Outpost",
+    "look": "a ruined legion outpost strewn with broken war engines and tattered banners",
+    "keywords": ["legion", "outpost", "battle", "ancient knights", "nether"],
+    "boss": ["irons_spellbooks:citadel_keeper"]
+  },
+  {
+    "structures": "irons_spellbooks:catacombs",
+    "look": "a crypt dug into the hillside, its stone halls thick with cobwebs and the restless dead",
+    "keywords": ["crypt", "undead", "necromancy", "tombs", "skeleton"],
+    "boss": ["irons_spellbooks:dead_king", "irons_spellbooks:necromancer"]
+  },
+  {
+    "structures": "irons_spellbooks:citadel",
+    "name": "The Citadel",
+    "look": "a colossal fortress of dark stone patrolled by ancient knights and cursed armor",
+    "keywords": ["citadel", "fortress", "ancient knights", "cursed armor", "nether", "fire"],
+    "boss": ["irons_spellbooks:citadel_keeper", "irons_spellbooks:fire_boss"]
+  },
+  {
+    "structures": "irons_spellbooks:evoker_fort",
+    "look": "a dark, forbidding fort where arch-evokers practice forbidden magic",
+    "keywords": ["evoker", "fort", "illager", "archevoker", "magic"],
+    "boss": ["irons_spellbooks:archevoker"]
+  },
+  {
+    "structures": "irons_spellbooks:ice_spider_den",
+    "look": "a frozen cave choked with webbing and swarming ice spiders",
+    "keywords": ["spider", "ice", "web", "cave", "frozen"]
+  },
+  {
+    "structures": "irons_spellbooks:impaled_icebreaker",
+    "look": "the wreck of an icebreaker ship, impaled upon a spike of ice",
+    "keywords": ["shipwreck", "ice", "frozen ocean", "treasure"]
+  },
+  {
+    "structures": "irons_spellbooks:mangrove_hut",
+    "look": "a rickety hut on stilts in the swamp, reeking of brewing potions",
+    "keywords": ["swamp", "hut", "potions", "apothecary"],
+    "boss": ["irons_spellbooks:apothecarist"]
+  },
+  {
+    "structures": "irons_spellbooks:mountain_tower",
+    "look": "a lonely tower on a snowy peak, home to a frost mage",
+    "keywords": ["tower", "mountain", "ice mage", "cryomancer", "frost"],
+    "boss": ["irons_spellbooks:cryomancer"]
+  },
+  {
+    "structures": "irons_spellbooks:pyromancer_tower",
+    "look": "a scorched stone tower with fire mages at its top",
+    "keywords": ["tower", "fire", "pyromancer", "flames"],
+    "boss": ["irons_spellbooks:pyromancer"]
+  },
+  {
+    "structures": "wind_spellbooks:windmill",
+    "look": "a windmill on the plains, crackling with wind magic",
+    "keywords": ["windmill", "wind", "aeromancer", "plains"],
+    "boss": ["wind_spellbooks:aeromancer"]
+  }
+]

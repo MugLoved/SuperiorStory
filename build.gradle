@@ -1,32 +1,73 @@
 plugins {
-    id 'eclipse'
-    id 'idea'
-    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id "eclipse"
+    id "maven-publish"
+    id "net.minecraftforge.gradle" version "6.0.+"
 }
 
-group = 'com.mugloved.superiorstory'
-version = '1.1.0'
-base { archivesName = 'superiorstory' }
+ext.workspaceModuleKey = "superior_story"
+apply from: "../../build-logic/workspace-addon.gradle"
+
+group = project.mod_group_id
+version = project.mod_version
+base { archivesName = project.mod_id }
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.20.1'
+    mappings channel: 'official', version: project.minecraft_version
     runs {
-        client { workingDirectory project.file('run'); mods { superiorstory { source sourceSets.main } } }
-        server { workingDirectory project.file('run'); mods { superiorstory { source sourceSets.main } } }
+        client { workingDirectory project.file('run') }
+        server { workingDirectory project.file('run') }
     }
 }
 
-repositories { mavenCentral() }
+def libJar = workspaceResolveInternalJar("superior_lib")
+def respawnJar = workspaceResolveInternalJar("superior_respawn")
+def soundsJar = workspaceResolveInternalJar("superior_sounds")
+def skillTreeJar = workspaceResolveInternalJar("superior_skill_tree")
+def hudJar = workspaceResolveInternalJar("superior_hud")
+def locatorJar = workspaceResolveInternalJar("superior_locator")
+def skylinesJar = workspaceResolveInternalJar("superior_skylines")
+def ftbLibraryJar = workspaceResolveExternalJar("ftb-library-forge-*.jar")
+def ftbQuestsJar = workspaceResolveExternalJar("ftb-quests-forge-*.jar")
+def ftbTeamsJar = workspaceResolveExternalJar("ftb-teams-forge-*.jar")
+def architecturyJar = workspaceResolveExternalJar("architectury-*-forge.jar")
+def bountifulJar = workspaceResolveExternalJar("Bountiful-*-forge.jar")
+def kambrikJar = workspaceResolveExternalJar("Kambrik-*-forge.jar")
+def kotlinForForgeJar = workspaceResolveExternalJar("kotlinforforge-*-all.jar")
+// Superior Shop is multi-loader with no staged compile artifact; compile against its Forge dev jar (optional at runtime).
+def shopJars = fileTree("../superior_shop/forge1201/build/libs") { include "superior_shop-forge-1201-*.jar" }.files.sort { a, b -> a.name <=> b.name }
+if (shopJars.isEmpty()) throw new GradleException("Could not find the superior_shop Forge dev jar. Build superior_shop :forge1201:jar first.")
+def starcatcherJar = workspaceResolveExternalJar("starcatcher-*-FORGE-1.20.1.jar")
+// Starcatcher's API types reference its jar-in-jar libraries (wdUtils, NeoBackports); compile against extracted copies.
+def starcatcherNestedDir = layout.buildDirectory.dir("starcatcher-jarjar").get().asFile
+copy {
+    from(zipTree(starcatcherJar)) { include "META-INF/jarjar/*.jar" }
+    into starcatcherNestedDir
+    eachFile { it.path = it.name }
+    includeEmptyDirs = false
+}
+def starcatcherJars = [starcatcherJar] + fileTree(starcatcherNestedDir) { include "*.jar" }.files.sort { it.name }
+
+repositories {
+    maven { url = "https://maven.minecraftforge.net" }
+    mavenCentral()
+    flatDir { dirs libJar.parentFile, respawnJar.parentFile, soundsJar.parentFile, skillTreeJar.parentFile }
+}
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.20.1-47.4.20'
+    minecraft "net.minecraftforge:forge:${project.minecraft_version}-${project.forge_version}"
+    implementation fg.deobf("workspace:superior_lib:0.1.0")
+    implementation fg.deobf("workspace:superior_respawn:0.1.0")
+    implementation fg.deobf("workspace:superior_sounds:0.1.0")
+    compileOnly fg.deobf("workspace:superior_skill_tree:0.1.0")
+    // Optional at runtime: guarded by ModList in the bridge / Story HUD hold.
+    [hudJar, locatorJar, skylinesJar, ftbLibraryJar, ftbQuestsJar, ftbTeamsJar, architecturyJar, shopJars.last(), bountifulJar, kambrikJar].each { compileOnly fg.deobf(files(it)) }
+    compileOnly files(kotlinForForgeJar)   // Kotlin stdlib types in Bountiful's signatures; no Minecraft types, so no deobf
+    starcatcherJars.each { compileOnly fg.deobf(files(it)) }   // optional at runtime: compat/fishing loads only with Starcatcher
+    testImplementation platform("org.junit:junit-bom:5.10.2")
+    testImplementation "org.junit.jupiter:junit-jupiter"
 }
 
 tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
-jar.finalizedBy('reobfJar')
-
-jar {
-    manifest { attributes('MixinConfigs': 'superiorstory.mixins.json') }
-}
+tasks.withType(Test).configureEach { useJUnitPlatform() }

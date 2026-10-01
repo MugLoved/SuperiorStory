@@ -1,0 +1,19 @@
+{
+  "npc": "mowziesmobs:sculptor",
+  "beats": [
+    {
+      "text": {
+        "translate": "superiorstory.bounty.line.looking"
+      },
+      "bounty": {
+        "decrees": [
+          "mowziesmobs"
+        ]
+      }
+    }
+  ],
+  "mods": [
+    "bountiful",
+    "mowziesmobs"
+  ]
+}

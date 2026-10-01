@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "gtbcs_geomancy_plus:geo_grandmaster",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:pyromancer",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:cryomancer",
+      "required": false
+    },
+    {
+      "id": "irons_spellbooks:priest",
+      "required": false
+    }
+  ]
+}

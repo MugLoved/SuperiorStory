@@ -1,0 +1,103 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_weighted_ejector": {
+      "rarity": "UNCOMMON"
+    },
+    "create_display_board": {
+      "rarity": "RARE"
+    },
+    "create_chute": {
+      "rarity": "COMMON"
+    },
+    "create_smart_chute": {
+      "rarity": "RARE"
+    },
+    "create_nixie_tube": {
+      "rarity": "UNCOMMON"
+    },
+    "create_rose_quartz_lamp": {
+      "rarity": "UNCOMMON"
+    },
+    "create_andesite_funnel": {
+      "rarity": "UNCOMMON"
+    },
+    "create_brass_funnel": {
+      "rarity": "RARE"
+    },
+    "create_brass_tunnel": {
+      "rarity": "RARE"
+    },
+    "create_sequenced_gearshift": {
+      "rarity": "RARE"
+    },
+    "create_display_link": {
+      "rarity": "RARE"
+    },
+    "create_andesite_tunnel": {
+      "rarity": "UNCOMMON"
+    },
+    "create_stockpile_switch": {
+      "rarity": "RARE"
+    },
+    "create_content_observer": {
+      "rarity": "RARE"
+    },
+    "create_powered_latch": {
+      "rarity": "COMMON"
+    },
+    "create_pulse_extender": {
+      "rarity": "COMMON"
+    },
+    "create_placard": {
+      "rarity": "COMMON"
+    },
+    "create_pulse_repeater": {
+      "rarity": "COMMON"
+    },
+    "create_redstone_link": {
+      "rarity": "UNCOMMON"
+    },
+    "create_powered_toggle_latch": {
+      "rarity": "COMMON"
+    },
+    "create_mechanical_arm": {
+      "rarity": "RARE"
+    },
+    "create_rotation_speed_controller": {
+      "rarity": "RARE"
+    },
+    "create_stock_link": {
+      "rarity": "RARE"
+    },
+    "create_item_hatch": {
+      "rarity": "COMMON"
+    },
+    "create_redstone_requester": {
+      "rarity": "RARE"
+    },
+    "create_factory_gauge": {
+      "rarity": "RARE"
+    },
+    "create_packager": {
+      "rarity": "UNCOMMON"
+    },
+    "create_package_frogport": {
+      "rarity": "UNCOMMON"
+    },
+    "create_stock_ticker": {
+      "rarity": "RARE"
+    },
+    "create_chain_conveyor": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_chain": {
+      "rarity": "COMMON"
+    },
+    "create_pulse_timer": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

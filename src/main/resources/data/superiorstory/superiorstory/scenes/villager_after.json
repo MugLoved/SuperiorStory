@@ -1,0 +1,83 @@
+{
+  "npc": "story_villager",
+  "priority": 20,
+  "if": {
+    "quest_stage": "turned_in"
+  },
+  "beats": [
+    {
+      "text": "Wren's coin over my bread. Hm. Well, you did the job.",
+      "if": {
+        "quest": {
+          "id": "superiorstory:shrine_for_wren",
+          "stage": "turned_in"
+        }
+      }
+    },
+    "Look who it is! The village hasn't stopped talking about you.",
+    {
+      "text": "Fancy another lead? I hear whispers of other old places.",
+      "choices": [
+        {
+          "text": "Yes. Where next?",
+          "goto": "search"
+        },
+        {
+          "text": "Not now.",
+          "goto": "end"
+        }
+      ]
+    }
+  ],
+  "branches": {
+    "search": [
+      {
+        "text": [
+          "Let me think... yes, there's somewhere else.",
+          "Hmm. A peddler mentioned somewhere just last week."
+        ],
+        "locate": {
+          "found": "found",
+          "failed": "nothing"
+        }
+      }
+    ],
+    "found": [
+      "That'd be the {structure}, about {distance} blocks to the {direction}.",
+      {
+        "needs": "look",
+        "text": "They say it's {look}."
+      },
+      {
+        "needs": "boss",
+        "text": "{boss} is said to guard it, {danger|and no one knows what else}."
+      },
+      {
+        "text": "It's marked on your map. Will you go?",
+        "choices": [
+          {
+            "text": "I'll go.",
+            "accept": true,
+            "outcome": "good",
+            "id": "villager/accepted_again",
+            "goto": "accepted"
+          },
+          {
+            "text": "Somewhere else.",
+            "goto": "search"
+          },
+          {
+            "text": "Not now.",
+            "goto": "end"
+          }
+        ]
+      }
+    ],
+    "nothing": [
+      "I've run out of stories. You've seen more of the world than I have."
+    ],
+    "accepted": [
+      "Good hunting. I'll be here."
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "uncommon",
+      "dimension": "minecraft:overworld",
+      "fluid": "minecraft:water",
+      "kinds": 2
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/uncommon_2",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "give": [
+      {
+        "item": "starcatcher:steady_bobber"
+      },
+      {
+        "item": "starcatcher:stone_hook"
+      },
+      {
+        "item": "starcatcher:humble_skin_smithing_template"
+      }
+    ],
+    "unlock": {
+      "key": "fishing_tier_2",
+      "notify": false
+    }
+  }
+}

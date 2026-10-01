@@ -1,0 +1,352 @@
+{
+  "rewards": [
+    {
+      "give": "fantasy_armor:eclipse_soldier_helmet"
+    },
+    {
+      "give": "fantasy_armor:eclipse_soldier_chestplate"
+    },
+    {
+      "give": "fantasy_armor:eclipse_soldier_leggings"
+    },
+    {
+      "give": "fantasy_armor:eclipse_soldier_boots"
+    },
+    {
+      "give": "fantasy_armor:dragonslayer_helmet"
+    },
+    {
+      "give": "fantasy_armor:dragonslayer_chestplate"
+    },
+    {
+      "give": "fantasy_armor:dragonslayer_leggings"
+    },
+    {
+      "give": "fantasy_armor:dragonslayer_boots"
+    },
+    {
+      "give": "fantasy_armor:hero_helmet"
+    },
+    {
+      "give": "fantasy_armor:hero_chestplate"
+    },
+    {
+      "give": "fantasy_armor:hero_leggings"
+    },
+    {
+      "give": "fantasy_armor:hero_boots"
+    },
+    {
+      "give": "fantasy_armor:golden_horns_helmet"
+    },
+    {
+      "give": "fantasy_armor:golden_horns_chestplate"
+    },
+    {
+      "give": "fantasy_armor:golden_horns_leggings"
+    },
+    {
+      "give": "fantasy_armor:golden_horns_boots"
+    },
+    {
+      "give": "fantasy_armor:thief_helmet"
+    },
+    {
+      "give": "fantasy_armor:thief_chestplate"
+    },
+    {
+      "give": "fantasy_armor:thief_leggings"
+    },
+    {
+      "give": "fantasy_armor:thief_boots"
+    },
+    {
+      "give": "fantasy_armor:wandering_wizard_helmet"
+    },
+    {
+      "give": "fantasy_armor:wandering_wizard_chestplate"
+    },
+    {
+      "give": "fantasy_armor:wandering_wizard_leggings"
+    },
+    {
+      "give": "fantasy_armor:wandering_wizard_boots"
+    },
+    {
+      "give": "fantasy_armor:chess_board_knight_helmet"
+    },
+    {
+      "give": "fantasy_armor:chess_board_knight_chestplate"
+    },
+    {
+      "give": "fantasy_armor:chess_board_knight_leggings"
+    },
+    {
+      "give": "fantasy_armor:chess_board_knight_boots"
+    },
+    {
+      "give": "fantasy_armor:dark_lord_helmet"
+    },
+    {
+      "give": "fantasy_armor:dark_lord_chestplate"
+    },
+    {
+      "give": "fantasy_armor:dark_lord_leggings"
+    },
+    {
+      "give": "fantasy_armor:dark_lord_boots"
+    },
+    {
+      "give": "fantasy_armor:sunset_wings_helmet"
+    },
+    {
+      "give": "fantasy_armor:sunset_wings_chestplate"
+    },
+    {
+      "give": "fantasy_armor:sunset_wings_leggings"
+    },
+    {
+      "give": "fantasy_armor:sunset_wings_boots"
+    },
+    {
+      "give": "fantasy_armor:fog_guard_helmet"
+    },
+    {
+      "give": "fantasy_armor:fog_guard_chestplate"
+    },
+    {
+      "give": "fantasy_armor:fog_guard_leggings"
+    },
+    {
+      "give": "fantasy_armor:fog_guard_boots"
+    },
+    {
+      "give": "fantasy_armor:dark_cover_helmet"
+    },
+    {
+      "give": "fantasy_armor:dark_cover_chestplate"
+    },
+    {
+      "give": "fantasy_armor:dark_cover_leggings"
+    },
+    {
+      "give": "fantasy_armor:dark_cover_boots"
+    },
+    {
+      "give": "fantasy_armor:spark_of_dawn_helmet"
+    },
+    {
+      "give": "fantasy_armor:spark_of_dawn_chestplate"
+    },
+    {
+      "give": "fantasy_armor:spark_of_dawn_leggings"
+    },
+    {
+      "give": "fantasy_armor:spark_of_dawn_boots"
+    },
+    {
+      "give": "fantasy_armor:golden_execution_helmet"
+    },
+    {
+      "give": "fantasy_armor:golden_execution_chestplate"
+    },
+    {
+      "give": "fantasy_armor:golden_execution_leggings"
+    },
+    {
+      "give": "fantasy_armor:golden_execution_boots"
+    },
+    {
+      "give": "fantasy_armor:forgotten_trace_helmet"
+    },
+    {
+      "give": "fantasy_armor:forgotten_trace_chestplate"
+    },
+    {
+      "give": "fantasy_armor:forgotten_trace_leggings"
+    },
+    {
+      "give": "fantasy_armor:forgotten_trace_boots"
+    },
+    {
+      "give": "fantasy_armor:redeemer_helmet"
+    },
+    {
+      "give": "fantasy_armor:redeemer_chestplate"
+    },
+    {
+      "give": "fantasy_armor:redeemer_leggings"
+    },
+    {
+      "give": "fantasy_armor:redeemer_boots"
+    },
+    {
+      "give": "fantasy_armor:twinned_helmet"
+    },
+    {
+      "give": "fantasy_armor:twinned_chestplate"
+    },
+    {
+      "give": "fantasy_armor:twinned_leggings"
+    },
+    {
+      "give": "fantasy_armor:twinned_boots"
+    },
+    {
+      "give": "fantasy_armor:gilded_hunt_helmet"
+    },
+    {
+      "give": "fantasy_armor:gilded_hunt_chestplate"
+    },
+    {
+      "give": "fantasy_armor:gilded_hunt_leggings"
+    },
+    {
+      "give": "fantasy_armor:gilded_hunt_boots"
+    },
+    {
+      "give": "fantasy_armor:lady_maria_helmet"
+    },
+    {
+      "give": "fantasy_armor:lady_maria_chestplate"
+    },
+    {
+      "give": "fantasy_armor:lady_maria_leggings"
+    },
+    {
+      "give": "fantasy_armor:lady_maria_boots"
+    },
+    {
+      "give": "fantasy_armor:crucible_knight_helmet"
+    },
+    {
+      "give": "fantasy_armor:crucible_knight_chestplate"
+    },
+    {
+      "give": "fantasy_armor:crucible_knight_leggings"
+    },
+    {
+      "give": "fantasy_armor:crucible_knight_boots"
+    },
+    {
+      "give": "fantasy_armor:evening_ghost_helmet"
+    },
+    {
+      "give": "fantasy_armor:evening_ghost_chestplate"
+    },
+    {
+      "give": "fantasy_armor:evening_ghost_leggings"
+    },
+    {
+      "give": "fantasy_armor:evening_ghost_boots"
+    },
+    {
+      "give": "fantasy_armor:ronin_helmet"
+    },
+    {
+      "give": "fantasy_armor:ronin_chestplate"
+    },
+    {
+      "give": "fantasy_armor:ronin_leggings"
+    },
+    {
+      "give": "fantasy_armor:ronin_boots"
+    },
+    {
+      "give": "fantasy_armor:malenia_helmet"
+    },
+    {
+      "give": "fantasy_armor:malenia_chestplate"
+    },
+    {
+      "give": "fantasy_armor:malenia_leggings"
+    },
+    {
+      "give": "fantasy_armor:malenia_boots"
+    },
+    {
+      "give": "fantasy_armor:old_knight_helmet"
+    },
+    {
+      "give": "fantasy_armor:old_knight_chestplate"
+    },
+    {
+      "give": "fantasy_armor:old_knight_leggings"
+    },
+    {
+      "give": "fantasy_armor:old_knight_boots"
+    },
+    {
+      "give": "fantasy_armor:silver_knight_helmet"
+    },
+    {
+      "give": "fantasy_armor:silver_knight_chestplate"
+    },
+    {
+      "give": "fantasy_armor:silver_knight_leggings"
+    },
+    {
+      "give": "fantasy_armor:silver_knight_boots"
+    },
+    {
+      "give": "fantasy_armor:dead_gladiator_helmet"
+    },
+    {
+      "give": "fantasy_armor:dead_gladiator_chestplate"
+    },
+    {
+      "give": "fantasy_armor:dead_gladiator_leggings"
+    },
+    {
+      "give": "fantasy_armor:dead_gladiator_boots"
+    },
+    {
+      "give": "fantasy_armor:flesh_of_the_feaster_helmet"
+    },
+    {
+      "give": "fantasy_armor:flesh_of_the_feaster_chestplate"
+    },
+    {
+      "give": "fantasy_armor:flesh_of_the_feaster_leggings"
+    },
+    {
+      "give": "fantasy_armor:flesh_of_the_feaster_boots"
+    },
+    {
+      "give": "fantasy_armor:wind_worshipper_helmet"
+    },
+    {
+      "give": "fantasy_armor:wind_worshipper_chestplate"
+    },
+    {
+      "give": "fantasy_armor:wind_worshipper_leggings"
+    },
+    {
+      "give": "fantasy_armor:wind_worshipper_boots"
+    },
+    {
+      "give": "fantasy_armor:grave_sentinel_helmet"
+    },
+    {
+      "give": "fantasy_armor:grave_sentinel_chestplate"
+    },
+    {
+      "give": "fantasy_armor:grave_sentinel_leggings"
+    },
+    {
+      "give": "fantasy_armor:grave_sentinel_boots"
+    },
+    {
+      "give": "fantasy_armor:ornstein_helmet"
+    },
+    {
+      "give": "fantasy_armor:ornstein_chestplate"
+    },
+    {
+      "give": "fantasy_armor:ornstein_leggings"
+    },
+    {
+      "give": "fantasy_armor:ornstein_boots"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "content": {
+    "minecraft_sculk": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_sculk_catalyst": {
+      "rarity": "RARE"
+    },
+    "minecraft_sculk_shrieker": {
+      "rarity": "RARE"
+    },
+    "minecraft_sculk_sensor": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

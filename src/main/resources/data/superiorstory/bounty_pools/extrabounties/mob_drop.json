@@ -1,0 +1,43 @@
+{
+  "content": {
+    "minecraft_rabbit_foot": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_fermented_spider_eye": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_glow_ink_sac": {
+      "rarity": "EPIC"
+    },
+    "minecraft_rabbit_hide": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_leather": {
+      "rarity": "COMMON"
+    },
+    "minecraft_bone": {
+      "rarity": "COMMON"
+    },
+    "minecraft_spider_eye": {
+      "rarity": "COMMON"
+    },
+    "minecraft_ink_sac": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_rotten_flesh": {
+      "rarity": "COMMON"
+    },
+    "minecraft_blaze_powder": {
+      "rarity": "COMMON"
+    },
+    "minecraft_slime_ball": {
+      "rarity": "COMMON"
+    },
+    "minecraft_string": {
+      "rarity": "COMMON"
+    },
+    "minecraft_feather": {
+      "rarity": "COMMON"
+    }
+  }
+}

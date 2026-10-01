@@ -1,0 +1,145 @@
+{
+  "content": {
+    "minecraft_enchanted_book_0": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_1": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_2": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_3": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_4": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_5": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_6": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_7": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_8": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_9": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_10": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_11": {
+      "rarity": "RARE"
+    },
+    "minecraft_enchanted_book_12": {
+      "rarity": "RARE"
+    },
+    "minecraft_enchanted_book_13": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_14": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_15": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_16": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_17": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_18": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_19": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_20": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_21": {
+      "rarity": "RARE"
+    },
+    "minecraft_enchanted_book_22": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_23": {
+      "rarity": "RARE"
+    },
+    "minecraft_enchanted_book_24": {
+      "rarity": "COMMON"
+    },
+    "minecraft_enchanted_book_25": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_26": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_27": {
+      "rarity": "RARE"
+    },
+    "minecraft_enchanted_book_28": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_29": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_30": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_31": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_32": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_33": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_34": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_35": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_36": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_enchanted_book_37": {
+      "rarity": "LEGENDARY"
+    },
+    "minecraft_enchanted_book_38": {
+      "rarity": "COMMON"
+    },
+    "minecraft_writable_book": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_book": {
+      "rarity": "COMMON"
+    },
+    "minecraft_bookshelf": {
+      "rarity": "COMMON"
+    },
+    "minecraft_ink_sac": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_feather": {
+      "rarity": "COMMON"
+    },
+    "minecraft_paper": {
+      "rarity": "COMMON"
+    },
+    "minecraft_glass_bottle": {
+      "rarity": "COMMON"
+    },
+    "minecraft_nether_wart": {
+      "rarity": "UNCOMMON"
+    }
+  }
+}

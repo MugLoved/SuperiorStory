@@ -1,0 +1,19 @@
+{
+  "npc": "irons_spellbooks:priest",
+  "beats": [
+    {
+      "text": {
+        "translate": "superiorstory.bounty.line.looking"
+      },
+      "bounty": {
+        "decrees": [
+          "irons_spellbooks"
+        ]
+      }
+    }
+  ],
+  "mods": [
+    "bountiful",
+    "irons_spellbooks"
+  ]
+}

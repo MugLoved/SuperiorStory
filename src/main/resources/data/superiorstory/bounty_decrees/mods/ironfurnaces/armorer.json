@@ -1,0 +1,11 @@
+{
+  "requires": [
+    "ironfurnaces"
+  ],
+  "objectives": [
+    "ironfurnaces_buy"
+  ],
+  "rewards": [
+    "ironfurnaces_sell"
+  ]
+}

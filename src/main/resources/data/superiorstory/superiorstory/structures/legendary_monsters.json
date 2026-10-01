@@ -1,0 +1,84 @@
+[
+  {
+    "structures": "legendary_monsters:*",
+    "keywords": ["legendary monster"]
+  },
+  {
+    "structures": "legendary_monsters:ancient_stronghold",
+    "look": "a moss-swallowed stone stronghold deep in the forest, crawling with spiky worms and ambushers",
+    "keywords": ["stronghold", "ancient", "forest", "guardian", "ambusher", "dark forest"],
+    "boss": ["legendary_monsters:ancient_guardian"]
+  },
+  {
+    "structures": "legendary_monsters:ancient_tower_remains",
+    "look": "the broken remains of a chorus-choked tower in the End",
+    "keywords": ["end", "tower", "chorus", "ruins"],
+    "boss": ["legendary_monsters:endersent"]
+  },
+  {
+    "structures": "legendary_monsters:cloudy_temple",
+    "look": "a temple among the clouds atop a windswept peak, wreathed in storm",
+    "keywords": ["cloud", "storm", "temple", "peak", "hurricane", "golem"],
+    "boss": ["legendary_monsters:cloud_golem"]
+  },
+  {
+    "structures": "legendary_monsters:collapsed_kingdom",
+    "look": "the crumbled halls of a fallen kingdom, haunted by knights who refuse to lie down",
+    "keywords": ["kingdom", "castle", "haunted knights", "undead", "paladin", "ruins"],
+    "boss": ["legendary_monsters:posessed_paladin", "legendary_monsters:fractured_apostle"]
+  },
+  {
+    "structures": "legendary_monsters:frostbitten_temple",
+    "look": "an ice-locked temple in the snow, guarded by a frost-rimed golem",
+    "keywords": ["temple", "ice", "frost", "golem", "snow"],
+    "boss": ["legendary_monsters:frostbitten_golem"]
+  },
+  {
+    "structures": "legendary_monsters:lava_eater_spawn",
+    "look": "a scorched Nether basin where a lava-drinking beast makes its lair",
+    "keywords": ["nether", "lava", "lava eater", "basin"],
+    "boss": ["legendary_monsters:lava_eater"]
+  },
+  {
+    "structures": "legendary_monsters:mossy_temple",
+    "look": "an overgrown jungle temple, its stones blanketed in moss and roots, with a colossus at its heart",
+    "keywords": ["jungle", "temple", "moss", "colossus", "overgrown"],
+    "boss": ["legendary_monsters:overgrown_colossus", "legendary_monsters:mossy_golem"]
+  },
+  {
+    "structures": "legendary_monsters:ruined_pyramid",
+    "look": "a ruined desert pyramid patrolled by bombers and a towering sentinel",
+    "keywords": ["desert", "pyramid", "bombers", "sentinel", "sand"],
+    "boss": ["legendary_monsters:dune_sentinel"]
+  },
+  {
+    "structures": "legendary_monsters:shulker_tower",
+    "look": "a purple tower in the End swarming with shulkers and treacherous mimics",
+    "keywords": ["end", "shulker", "tower", "mimic"],
+    "boss": ["legendary_monsters:shulker_mimic"]
+  },
+  {
+    "structures": "legendary_monsters:skeletosaurus_nest",
+    "look": "a nest of giant bones in the soul sand valley",
+    "keywords": ["nether", "soul sand valley", "bones", "skeleton", "dinosaur"],
+    "boss": ["legendary_monsters:skeletosaurus"]
+  },
+  {
+    "structures": "legendary_monsters:soul_fortress_remains",
+    "look": "the ruined remains of a soul-fire fortress crawling with wither skeletons",
+    "keywords": ["nether", "fortress", "soul fire", "wither skeleton"],
+    "boss": ["legendary_monsters:withered_abomination"]
+  },
+  {
+    "structures": "legendary_monsters:space_station",
+    "look": "a derelict station adrift in the End's void, staffed by flame-cloaked guardians",
+    "keywords": ["end", "space station", "flameborn", "obliterator", "void"],
+    "boss": ["legendary_monsters:the_obliterator", "legendary_monsters:annihilation_pursuer"]
+  },
+  {
+    "structures": "legendary_monsters:warped_fungussus_nest",
+    "look": "a nest of pulsing warped fungus deep in the Nether",
+    "keywords": ["nether", "warped forest", "fungus", "nest"],
+    "boss": ["legendary_monsters:warped_fungussus"]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "common",
+      "dimension": "minecraft:overworld",
+      "fluid": "minecraft:water"
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/common_3",
+      "stage": "turned_in"
+    }
+  },
+  "repeatable": true,
+  "cooldown": "1d",
+  "reward": {
+    "coins": 30
+  }
+}

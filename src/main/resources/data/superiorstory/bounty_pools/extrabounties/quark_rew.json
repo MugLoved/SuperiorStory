@@ -1,0 +1,133 @@
+{
+  "requires": [
+    "quark"
+  ],
+  "content": {
+    "quark_music_disc_endermosh": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_chatter": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_fire": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_crickets": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_clock": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_wind": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_rain": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_ocean": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_music_disc_drips": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_dragon_scale": {
+      "rarity": "LEGENDARY"
+    },
+    "quark_egg_parrot_gray": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_egg_parrot_yellow_blue": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_egg_parrot_green": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_egg_parrot_red_blue": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_egg_parrot_blue": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_ancient_sapling": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_glow_shroom": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_pickarang": {
+      "rarity": "RARE"
+    },
+    "quark_forgotten_hat": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_smithing_template_rune": {
+      "rarity": "RARE"
+    },
+    "quark_seed_pouch": {
+      "rarity": "UNCOMMON"
+    },
+    "quark_ancient_fruit": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_0": {
+      "rarity": "EPIC"
+    },
+    "quark_ancient_tome_1": {
+      "rarity": "EPIC"
+    },
+    "quark_ancient_tome_2": {
+      "rarity": "EPIC"
+    },
+    "quark_ancient_tome_3": {
+      "rarity": "EPIC"
+    },
+    "quark_ancient_tome_4": {
+      "rarity": "EPIC"
+    },
+    "quark_ancient_tome_5": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_6": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_7": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_8": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_9": {
+      "rarity": "EPIC"
+    },
+    "quark_ancient_tome_10": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_11": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_12": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_13": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_14": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_15": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_16": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_17": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_18": {
+      "rarity": "RARE"
+    },
+    "quark_ancient_tome_19": {
+      "rarity": "RARE"
+    }
+  }
+}

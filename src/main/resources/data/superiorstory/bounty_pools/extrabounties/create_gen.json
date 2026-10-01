@@ -1,0 +1,31 @@
+{
+  "requires": [
+    "create"
+  ],
+  "content": {
+    "create_water_wheel": {
+      "rarity": "COMMON"
+    },
+    "create_large_water_wheel": {
+      "rarity": "UNCOMMON"
+    },
+    "create_steam_whistle": {
+      "rarity": "UNCOMMON"
+    },
+    "create_fluid_tank": {
+      "rarity": "UNCOMMON"
+    },
+    "create_steam_engine": {
+      "rarity": "UNCOMMON"
+    },
+    "create_windmill_bearing": {
+      "rarity": "UNCOMMON"
+    },
+    "create_empty_blaze_burner": {
+      "rarity": "UNCOMMON"
+    },
+    "minecraft_campfire": {
+      "rarity": "COMMON"
+    }
+  }
+}

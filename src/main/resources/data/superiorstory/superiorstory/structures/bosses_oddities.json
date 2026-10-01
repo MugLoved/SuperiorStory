@@ -1,0 +1,7 @@
+{
+  "structures": "oddities:orchid_shrine",
+  "boss": [
+    "oddities:queen_of_orchid"
+  ],
+  "look": "an orchid shrine with a summoning altar"
+}

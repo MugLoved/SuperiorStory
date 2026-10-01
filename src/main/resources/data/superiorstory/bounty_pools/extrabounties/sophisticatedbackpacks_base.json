@@ -1,0 +1,10 @@
+{
+  "requires": [
+    "sophisticatedbackpacks"
+  ],
+  "content": {
+    "sophisticatedbackpacks_upgrade_base": {
+      "rarity": "COMMON"
+    }
+  }
+}

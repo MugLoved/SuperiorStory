@@ -1,0 +1,34 @@
+{
+  "mods": [
+    "starcatcher"
+  ],
+  "item": {
+    "fish": {
+      "rarity": "common",
+      "dimension": "minecraft:overworld",
+      "fluid": "minecraft:water",
+      "quantity": 2
+    }
+  },
+  "if": {
+    "quest": {
+      "id": "superiorstory:guides/fishing/common_2",
+      "stage": "turned_in"
+    }
+  },
+  "reward": {
+    "give": [
+      {
+        "item": "starcatcher:copper_hook"
+      },
+      {
+        "item": "starcatcher:worm",
+        "quantity": 8
+      }
+    ],
+    "unlock": {
+      "key": "fishing_tier_1",
+      "notify": false
+    }
+  }
+}

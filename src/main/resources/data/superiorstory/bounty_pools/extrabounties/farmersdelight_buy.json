@@ -1,0 +1,109 @@
+{
+  "requires": [
+    "farmersdelight"
+  ],
+  "content": {
+    "farmersdelight_pie_crust": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_milk_bottle": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_beef_patty": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_onion_crate": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cabbage_leaf": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_rice_bag": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_beetroot_crate": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_potato_crate": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cooked_cod_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cabbage_crate": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_tomato_crate": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_straw": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_rice_bale": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cooked_chicken_cuts": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cooked_bacon": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_pumpkin_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_rope": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_carrot_crate": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_smoked_ham": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_cooked_mutton_chops": {
+      "rarity": "UNCOMMON"
+    },
+    "farmersdelight_tomato": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_safety_net": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cooked_salmon_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_canvas": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_organic_compost": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_basket": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cake_slice": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_rice_panicle": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_onion": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_wheat_dough": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_tree_bark": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_raw_pasta": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_fried_egg": {
+      "rarity": "COMMON"
+    },
+    "farmersdelight_cabbage": {
+      "rarity": "COMMON"
+    }
+  }
+}

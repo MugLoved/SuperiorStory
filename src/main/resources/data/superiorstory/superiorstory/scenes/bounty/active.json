@@ -1,0 +1,26 @@
+{
+  "trigger": "bounty_template",
+  "beats": [
+    {
+      "translate": "superiorstory.bounty.active.1"
+    },
+    {
+      "needs": "bounty_obj_2",
+      "text": {
+        "translate": "superiorstory.bounty.active.2"
+      }
+    },
+    {
+      "needs": "bounty_obj_3",
+      "text": {
+        "translate": "superiorstory.bounty.active.3"
+      }
+    },
+    {
+      "translate": "superiorstory.bounty.active.time"
+    }
+  ],
+  "mods": [
+    "bountiful"
+  ]
+}
